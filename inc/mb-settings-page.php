@@ -34,11 +34,11 @@ function prefix_options_meta_boxes( $meta_boxes )
         'title'          => __( 'General', 'hosteria' ),
         'settings_pages' => 'my-options',
         'fields'         => array(
-            array (
-                'name'        => __( 'Logo', 'loslenos' ),
-                'id'          => 'general_logo',
-                'type'        => 'file_input',
-            ),
+            // array (
+            //     'name'        => __( 'Logo', 'loslenos' ),
+            //     'id'          => 'general_logo',
+            //     'type'        => 'file_input',
+            // ),
             array (
                 'name'        => __( 'Dirección', 'loslenos' ),
                 'id'          => 'general_address',
@@ -113,11 +113,15 @@ function your_prefix_textarea_demo( $meta_boxes )
         'settings_pages' => 'my-options-copy',
         'fields'         => array(
             array(
-                'name'        => __( 'Texto al pie de la página', 'loslenos' ),
-                'id'          => 'general_copy',
-                'type'        => 'textarea',
-                'rows'        => 5,
-                'cols'        => 5,
+                'name'    => __( 'Texto', 'loslenos' ),
+                'id'      => "general_copy",
+                'type'    => 'wysiwyg',
+                'raw'     => false,
+                'options' => array(
+                    'textarea_rows' => 4,
+                    'teeny'         => true,
+                    'media_buttons' => false,
+                ),
             ),
         ),
     );
