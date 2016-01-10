@@ -115,9 +115,12 @@ add_action( 'widgets_init', 'hosteria_widgets_init' );
  * Enqueue scripts and styles.
  */
 function hosteria_scripts() {
-	wp_enqueue_style( 'hosteria-style', get_stylesheet_uri() );
+	// wp_enqueue_style( 'hosteria-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'hosteria-css', get_template_directory_uri() . '/css/app.css' );
 
-	// wp_enqueue_script( 'hosteria-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	// wp_enqueue_script( 'hosteria-foundation', get_template_directory_uri() . '/js/fouda.js', array(), '', true );
+	wp_enqueue_script( 'hosteria-slick', get_template_directory_uri() . '/js/slick.min.js', array(), '', true );
+	wp_enqueue_script( 'hosteria-js', get_template_directory_uri() . '/js/app.js', array(), '', true );
 
 	// wp_enqueue_script( 'hosteria-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -151,6 +154,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Metabox Settings Page
  */
 require get_template_directory() . '/inc/mb-settings-page.php';
+
+/**
+ * Load Metabox Settings Page
+ */
+require get_template_directory() . '/inc/mb-pages.php';
 
 /**
  * Wordpress and Plugins Tweaks

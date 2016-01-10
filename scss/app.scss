@@ -133,3 +133,6 @@ $color-primary: $color-purple;
         color: $color-yellow-text;
     }
 }
+
+@import 'slick';
+@import 'slick-theme';

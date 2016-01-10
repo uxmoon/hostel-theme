@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html class="no-js" <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +32,15 @@
         </div><!-- .site-branding -->
 
         <nav id="site-navigation" class="main-navigation" role="navigation">
-            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+            <?php wp_nav_menu(
+                array(
+                    'theme_location' => 'primary',
+                    'menu_id'        => 'primary-menu',
+                    'container' => '',
+                    'menu_class' => 'site-menu'
+                    )
+                );
+            ?>
         </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
 
