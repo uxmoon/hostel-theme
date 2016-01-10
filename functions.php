@@ -151,3 +151,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Metabox Settings Page
  */
 require get_template_directory() . '/inc/mb-settings-page.php';
+
+/**
+ * Wordpress and Plugins Tweaks
+ */
+require get_template_directory() . '/inc/wp-tweaks.php';
