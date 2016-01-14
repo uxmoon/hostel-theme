@@ -83,16 +83,20 @@ function loslenos_register_meta_boxes( $meta_boxes )
             array(
                 'name'        => __( 'Texto descriptivo', 'loslenos' ),
                 'id'          => 'featured_text',
-                'type'        => 'textarea',
-                'rows'        => 5,
-                'cols'        => 5,
+                'type'    => 'wysiwyg',
+                'raw'     => false,
+                'options' => array(
+                    'textarea_rows' => 5,
+                    'teeny'         => true,
+                    'media_buttons' => false,
+                ),
             ),
         )
     );
 
     // Homepage - 3rd meta box
     $meta_boxes[] = array(
-        'title'      => 'Turismo tranquilo',
+        'title'      => 'Elija hacer turismo tranquilo',
         'post_types' => 'page',
 
         'include' => array(
@@ -102,18 +106,22 @@ function loslenos_register_meta_boxes( $meta_boxes )
         ),
 
         'fields'     => array(
-            array(
-                'name'        => __( 'Titulo', 'loslenos' ),
-                'id'          => 'text',
-                'type'        => 'text',
-                'size'        => 30
-            ),
+            // array(
+            //     'name'        => __( 'Titulo', 'loslenos' ),
+            //     'id'          => 'text',
+            //     'type'        => 'text',
+            //     'size'        => 30
+            // ),
             array(
                 'name'        => __( 'Texto descriptivo', 'loslenos' ),
-                'id'          => 'featured_text',
-                'type'        => 'textarea',
-                'rows'        => 5,
-                'cols'        => 5,
+                'id'          => 'home_tourism_text',
+                'type'    => 'wysiwyg',
+                'raw'     => false,
+                'options' => array(
+                    'textarea_rows' => 5,
+                    'teeny'         => true,
+                    'media_buttons' => false,
+                ),
             ),
         )
     );
