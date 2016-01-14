@@ -43,7 +43,7 @@ function loslenos_register_meta_boxes( $meta_boxes )
         'fields'     => array(
             array(
                 'name'        => __( 'Titulo 1', 'loslenos' ),
-                'id'          => 'text',
+                'id'          => 'first_featured_title',
                 'type'        => 'text',
                 'size'        => 30
             ),
@@ -56,7 +56,7 @@ function loslenos_register_meta_boxes( $meta_boxes )
             ),
             array(
                 'name'        => __( 'Titulo 2', 'loslenos' ),
-                'id'          => 'text',
+                'id'          => 'second_featured_title',
                 'type'        => 'text',
                 'size'        => 30
             ),
@@ -69,7 +69,7 @@ function loslenos_register_meta_boxes( $meta_boxes )
             ),
             array(
                 'name'        => __( 'Titulo 3', 'loslenos' ),
-                'id'          => 'text',
+                'id'          => 'third_featured_title',
                 'type'        => 'text',
                 'size'        => 30
             ),
@@ -90,6 +90,13 @@ function loslenos_register_meta_boxes( $meta_boxes )
                     'teeny'         => true,
                     'media_buttons' => false,
                 ),
+            ),
+            array(
+                'id'               => 'home_featured_bg_image',
+                'name'             => __( 'Imagen de fondo', 'loslenos' ),
+                'type'             => 'image_advanced',
+                'force_delete'     => true,
+                'max_file_uploads' => 1,
             ),
         )
     );
@@ -246,8 +253,19 @@ function loslenos_register_meta_boxes( $meta_boxes )
                 'id'   => 'fake_divider_id', // Not used, but needed
             ),
             array(
-                'name'    => __( 'Texto 10 pilares', 'loslenos' ),
+                'name'    => __( 'Texto 10 pilares. 1 a 5.', 'loslenos' ),
                 'id'      => 'services_pilars_text',
+                'type'    => 'wysiwyg',
+                'raw'     => false,
+                'options' => array(
+                    'textarea_rows' => 5,
+                    'teeny'         => true,
+                    'media_buttons' => false,
+                ),
+            ),
+            array(
+                'name'    => __( 'Texto 10 pilares. 6 a 10.', 'loslenos' ),
+                'id'      => 'services_pilars_text_2',
                 'type'    => 'wysiwyg',
                 'raw'     => false,
                 'options' => array(

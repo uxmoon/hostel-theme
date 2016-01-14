@@ -1,24 +1,53 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <div class="row">
+            <div class="small-12 columns">
+                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            </div>
+        </div>
     </header>
     <div class="entry-content">
-        <?php the_content(); ?>
+        <div class="row">
+            <div class="small-12 columns">
+                <?php the_content(); ?>
+            </div>
+        </div>
 
         <!-- services other -->
-        <?php echo rwmb_meta( 'services_tourism_other' ); ?>
+        <div class="hl-row">
+            <div class="row">
+                <div class="small-12 columns">
+                <?php echo rwmb_meta( 'services_tourism_other' ); ?>
+                </div>
+            </div>
+        </div>
 
-        <!-- services tourism -->
-        <?php
-            $images = rwmb_meta( 'services_tourism_media', 'type=image&size=full' );
-            foreach ( $images as $image )
-            {
-                echo "<img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";
-            }
-        ?>
-        <?php echo rwmb_meta( 'services_tourism_text' ); ?>
+        <div class="row">
+            <div class="small-12 columns">
+            <!-- services tourism -->
+            <?php
+                $images = rwmb_meta( 'services_tourism_media', 'type=image&size=full' );
+                foreach ( $images as $image )
+                {
+                    echo "<img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";
+                }
+            ?>
+            <?php echo rwmb_meta( 'services_tourism_text' ); ?>
 
-        <!-- services pilars -->
-        <?php echo rwmb_meta( 'services_pilars_text' ); ?>
+            <!-- services pilars -->
+            <div class="hl-pilars">
+                <div class="row">
+                    <div class="small-12 medium-6 columns">
+                        <?php echo rwmb_meta( 'services_pilars_text' ); ?>
+                    </div>
+                    <div class="small-12 medium-6 columns">
+                        <div class="hl-pilars-last">
+                            <?php echo rwmb_meta( 'services_pilars_text_2' ); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
 </article>
