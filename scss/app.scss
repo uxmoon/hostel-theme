@@ -130,7 +130,11 @@ $font-southern: 'southern_aire_personal_use_Rg', sans-serif;
     }
 }
 
-@import 'theme';
+// @import 'theme';
 
-@import 'slick';
-@import 'slick-theme';
+// @import 'slick';
+// @import 'slick-theme';
+
+.hello {
+    display: none;
+}

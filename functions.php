@@ -57,8 +57,8 @@ add_action( 'widgets_init', 'hosteria_widgets_init' );
  * Enqueue scripts and styles.
  */
 function hosteria_scripts() {
-	wp_enqueue_style( 'hosteria-style', get_stylesheet_uri() );
-	// wp_enqueue_style( 'hosteria-css', get_template_directory_uri() . '/css/app.css' );
+	// wp_enqueue_style( 'hosteria-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'hosteria-css', get_template_directory_uri() . '/css/app.css' );
 
 	// wp_enqueue_script( 'hosteria-slick', get_template_directory_uri() . '/js/slick.min.js', array(), '', true );
 	// wp_enqueue_script( 'hosteria-js', get_template_directory_uri() . '/js/app.js', array(), '', true );
