@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+/* reset */
+
+@import 'normalize.css';
+
+/* box sizing */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* fonts */
