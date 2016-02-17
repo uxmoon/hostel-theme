@@ -1,52 +1,6 @@
 @charset 'utf-8';
 
-@import 'settings';
-@import 'foundation';
-// @import 'motion-ui';
-
-@include foundation-global-styles;
-@include foundation-grid;
-@include foundation-typography;
-@include foundation-button;
-@include foundation-forms;
-@include foundation-visibility-classes;
-@include foundation-float-classes;
-// @include foundation-accordion;
-// @include foundation-accordion-menu;
-// @include foundation-badge;
-// @include foundation-breadcrumbs;
-// @include foundation-button-group;
-// @include foundation-callout;
-// @include foundation-close-button;
-// @include foundation-drilldown-menu;
-// @include foundation-dropdown;
-// @include foundation-dropdown-menu;
-// @include foundation-flex-video;
-// @include foundation-label;
-// @include foundation-media-object;
-// @include foundation-menu;
-// @include foundation-off-canvas;
-// @include foundation-orbit;
-// @include foundation-pagination;
-// @include foundation-progress-bar;
-// @include foundation-slider;
-// @include foundation-sticky;
-// @include foundation-reveal;
-// @include foundation-switch;
-// @include foundation-table;
-// @include foundation-tabs;
-// @include foundation-thumbnail;
-// @include foundation-title-bar;
-// @include foundation-tooltip;
-// @include foundation-top-bar;
-
-// @include motion-ui-transitions;
-// @include motion-ui-animations;
-
-
-// =============================================================================
-// String Replace
-// =============================================================================
+/* String Replace */
 
 @function str-replace($string, $search, $replace: "") {
     $index: str-index($string, $search);
@@ -58,9 +12,7 @@
     @return $string;
 }
 
-// =============================================================================
-// Font Face
-// =============================================================================
+/* Font Face */
 
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
     $src: null;
@@ -101,7 +53,7 @@ $font-southern: 'southern_aire_personal_use_Rg', sans-serif;
 .font-quattrocento-bold { font-family: $font-quattrocento-bold; }
 .font-southern { font-family: $font-southern; }
 
-// Footer Layout
+/* Footer Layout */
 .site-footer--top,
 .site-footer--bottom {
     ul {
@@ -112,7 +64,7 @@ $font-southern: 'southern_aire_personal_use_Rg', sans-serif;
     }
 }
 
-// services
+/* services */
 .hl-pilars {
     ol {
         margin: 0;
@@ -158,7 +110,7 @@ $font-southern: 'southern_aire_personal_use_Rg', sans-serif;
         }
     }
 
-    // 2nd column bullets
+    /* 2nd column bullets */
     .hl-pilars-last ol {
         li:nth-child(1)::before {
             content: '6',
