@@ -31,7 +31,7 @@
                 }
             ?></p>
         </div>
-        <div class="site-footer--botom">
+        <div class="site-contact">
             <ul>
 
                 <?php
@@ -76,7 +76,8 @@
                 ?>
 
             </ul>
-            <?php //wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
+
+            <div class="site-menu-footer">
             <?php
                 $menuParameters = array(
                     'theme_location' => 'footer',
@@ -87,6 +88,8 @@
                 );
                 echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
             ?>
+            </div>
+
             <div class="site-info">
                 <p>&copy; Copyright <?php echo date('Y'); ?>. <?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>. Todos los derechos reservados.</p>
                 <?php

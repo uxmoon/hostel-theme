@@ -18,6 +18,43 @@ html {
 
 @import 'fonts.css';
 
+/* Layout */
+
+.site-contact,
+.site-menu {
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+    li {
+        display: inline-block;
+    }
+}
+
+.site-info {
+
+}
+
+/* Theme */
+
+.site-menu,
+.site-menu-footer {
+    text-align: center;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        font-family: $font-quattro-bold;
+    }
+}
+
+.site-info {
+    text-align: center;
+    font-size: 13px;
+    p {
+        margin: 0;
+        line-height: 1;
+    }
+}
+
 body {
     font-family: $font-quattro;
     font-weight: normal;
