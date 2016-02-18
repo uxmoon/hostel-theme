@@ -19,6 +19,7 @@ function hosteria_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Principal', 'hosteria' ),
 		'footer'  => esc_html__( 'Footer', 'hosteria' ),
+		'sidebar' => esc_html__( 'Sidebar', 'hosteria' ),
 	) );
 
 	/*
