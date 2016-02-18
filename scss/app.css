@@ -1,10 +1,10 @@
 @charset 'utf-8';
 
-/* reset */
+/* Reset */
 
 @import 'normalize.css';
 
-/* box sizing */
+/* Box sizing */
 
 html {
   box-sizing: border-box;
@@ -14,4 +14,43 @@ html {
   box-sizing: inherit;
 }
 
-/* fonts */
+/* Fonts */
+
+@font-face {
+    font-family: 'quattrocentoregular';
+    src: url('../fonts/quattrocento-webfont.eot');
+    src: url('../fonts/quattrocento-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quattrocento-webfont.woff') format('woff'),
+         url('../fonts/quattrocento-webfont.ttf') format('truetype'),
+         url('../fonts/quattrocento-webfont.svg#quattrocentoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'quattrocentobold';
+    src: url('../fonts/quattrocento-bold-webfont.eot');
+    src: url('../fonts/quattrocento-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quattrocento-bold-webfont.woff') format('woff'),
+         url('../fonts/quattrocento-bold-webfont.ttf') format('truetype'),
+         url('../fonts/quattrocento-bold-webfont.svg#quattrocentobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'southern_aire_personal_use_Rg';
+    src: url('../fonts/southernaire-webfont.eot');
+    src: url('../fonts/southernaire-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/southernaire-webfont.woff') format('woff'),
+         url('../fonts/southernaire-webfont.ttf') format('truetype'),
+         url('../fonts/southernaire-webfont.svg#southern_aire_personal_use_Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-quattro       : 'quattrocentoregular';
+$font-quattro-bold  : 'quattrocentobold';
+$font-southern      : 'southern_aire_personal_use_Rg';

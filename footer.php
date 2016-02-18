@@ -78,7 +78,17 @@
                 ?>
 
             </ul>
-            <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
+            <?php //wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
+            <?php
+                $menuParameters = array(
+                    'theme_location' => 'footer',
+                    'container'      => false,
+                    'echo'           => false,
+                    'items_wrap'     => '%3$s',
+                    'depth'          => 0,
+                );
+                echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
+            ?>
             <div class="site-info">
                 <p>&copy; Copyright <?php echo date('Y'); ?>. Hostería Los Leños. Todos los derechos reservados.</p>
                 <?php
