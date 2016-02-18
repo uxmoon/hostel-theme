@@ -1,14 +1,12 @@
 <?php
     $settings = get_option( 'my_options' );
 ?>
-    </div><!-- #content -->
+    </div>
 
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="site-footer--top">
-            <!-- weather widget -->
-            <?php dynamic_sidebar( 'sidebar-1' ); ?>
 
-            <!-- texto -->
+            <?php dynamic_sidebar( 'sidebar-1' ); ?>
 
             <?php
                 $field_footer_media = 'general_footer_media';
@@ -90,17 +88,17 @@
                 echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
             ?>
             <div class="site-info">
-                <p>&copy; Copyright <?php echo date('Y'); ?>. Hostería Los Leños. Todos los derechos reservados.</p>
+                <p>&copy; Copyright <?php echo date('Y'); ?>. <?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>. Todos los derechos reservados.</p>
                 <?php
                 $field_copy = 'general_copy';
                 if ( isset( $settings[$field_copy] ) ) {
                     echo wpautop( $settings[$field_copy] );
                 }
                 ?>
-            </div><!-- .site-info -->
+            </div>
         </div>
-    </footer><!-- #colophon -->
-</div><!-- #page -->
+    </footer>
+</div>
 
 <?php wp_footer(); ?>
 
