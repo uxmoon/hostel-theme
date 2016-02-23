@@ -20,4 +20,22 @@ get_header(); ?>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla possimus porro non sint aspernatur magni. Id, vitae iusto earum ea perferendis quod laborum optio repellendus error quo molestias similique. Ex.</p>
 </div>
 
+<div class="row-red">
+    <div class="row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui, culpa. Maiores voluptatum quam minima animi, nostrum perspiciatis. Magni, et eveniet magnam sed illum soluta, voluptatum rem tempore obcaecati quod.</p>
+    </div>
+</div>
+
+<div class="row-yellow">
+    <div class="row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui, culpa. Maiores voluptatum quam minima animi, nostrum perspiciatis. Magni, et eveniet magnam sed illum soluta, voluptatum rem tempore obcaecati quod.</p>
+    </div>
+</div>
+
+<div class="row-purple">
+    <div class="row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui, culpa. Maiores voluptatum quam minima animi, nostrum perspiciatis. Magni, et eveniet magnam sed illum soluta, voluptatum rem tempore obcaecati quod.</p>
+    </div>
+</div>
+
 <?php get_footer(); ?>

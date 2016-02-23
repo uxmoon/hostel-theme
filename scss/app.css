@@ -57,6 +57,27 @@ html {
 
 /* Theme */
 
+$color-red          : #611D25;
+$color-yellow       : #FFF5D8;
+$color-purple       : #872750;
+$color-text-purple  : #421233;
+$color-text-yellow  : #FFF4D3;
+
+.row-red {
+    background-color: $color-red;
+    color: $color-text-yellow;
+}
+
+.row-yellow {
+    background-color: $color-yellow;
+}
+
+.row-purple {
+    background-color: $color-purple;
+    color: $color-text-yellow;
+}
+
+
 .site-menu,
 .site-menu-footer {
     text-align: center;
