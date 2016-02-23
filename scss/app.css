@@ -14,7 +14,7 @@ html {
   box-sizing: inherit;
 }
 
-/* Fonts */
+/* Fonts - quattrocentro & icon fonts */
 
 @import 'fonts.css';
 
@@ -75,8 +75,20 @@ $color-text-yellow  : #FFF4D3;
 .row-purple {
     background-color: $color-purple;
     color: $color-text-yellow;
-}
 
+    [class^="icon-"],
+    [class*=" icon-"] {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        border-radius: 1000px;
+
+        color: $color-purple;
+        background-color: $color-yellow;
+        text-align: center;
+    }
+}
 
 .site-menu,
 .site-menu-footer {

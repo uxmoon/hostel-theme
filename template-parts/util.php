@@ -38,4 +38,14 @@ get_header(); ?>
     </div>
 </div>
 
+<div class="row-purple">
+    <div class="row">
+        <h4>Icons</h4>
+        <i class="icon-old-phone"></i>
+        <i class="icon-map-marker"></i>
+        <i class="icon-facebook"></i>
+        <i class="icon-envelope"></i>
+    </div>
+</div>
+
 <?php get_footer(); ?>
