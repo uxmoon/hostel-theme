@@ -3,34 +3,36 @@
 ?>
     </div>
 
-    <footer id="colophon" class="site-footer" role="contentinfo">
-        <div class="site-footer--top">
+    <div class="site-content-bottom">
 
-            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+        <?php dynamic_sidebar( 'sidebar-1' ); ?>
 
-            <?php
-                $field_footer_media = 'general_footer_media';
-                if ( isset( $settings[$field_footer_media] ) )
-                {
-                    echo '<img src=' . $settings[$field_footer_media] . ' alt="Hosteria">';
-                }
+        <?php
+            $field_footer_media = 'general_footer_media';
+            if ( isset( $settings[$field_footer_media] ) )
+            {
+                echo '<img src=' . $settings[$field_footer_media] . ' alt="Hosteria">';
+            }
 
-                $field_footer_text = 'general_footer_text_content';
-                if ( isset( $settings[$field_footer_text] ) ) {
-                    echo $settings[$field_footer_text];
-                }
-            ?>
+            $field_footer_text = 'general_footer_text_content';
+            if ( isset( $settings[$field_footer_text] ) ) {
+                echo $settings[$field_footer_text];
+            }
+        ?>
 
-            <h4>Hágase fan</h4>
+        <h4>Hágase fan</h4>
 
-            <?php
-                $field_fb_url   = 'general_fb_url';
-                $field_fb_label = 'general_fb_label';
-                if ( isset( $settings[$field_fb_url] ) ) {
-                    echo '<p>Síganos en <a href="' . $settings[$field_fb_url] . ' rel="external">'. $settings[$field_fb_label] . '</a>';
-                }
-            ?></p>
-        </div>
+        <?php
+            $field_fb_url   = 'general_fb_url';
+            $field_fb_label = 'general_fb_label';
+            if ( isset( $settings[$field_fb_url] ) ) {
+                echo '<p>Síganos en <a href="' . $settings[$field_fb_url] . ' rel="external">'. $settings[$field_fb_label] . '</a>';
+            }
+        ?></p>
+    </div>
+
+    <footer id="colophon" class="site-footer row-yellow" role="contentinfo">
+
         <div class="site-contact">
             <ul>
 
@@ -74,31 +76,30 @@
                 // }
 
                 ?>
-
             </ul>
+        </div>
 
-            <div class="site-menu-footer">
+        <div class="site-menu-footer">
+        <?php
+            $menuParameters = array(
+                'theme_location' => 'footer',
+                'container'      => false,
+                'echo'           => false,
+                'items_wrap'     => '%3$s',
+                'depth'          => 0,
+            );
+            echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
+        ?>
+        </div>
+
+        <div class="site-info">
+            <p>&copy; Copyright <?php echo date('Y'); ?>. <?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>. Todos los derechos reservados.</p>
             <?php
-                $menuParameters = array(
-                    'theme_location' => 'footer',
-                    'container'      => false,
-                    'echo'           => false,
-                    'items_wrap'     => '%3$s',
-                    'depth'          => 0,
-                );
-                echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
+            $field_copy = 'general_copy';
+            if ( isset( $settings[$field_copy] ) ) {
+                echo wpautop( $settings[$field_copy] );
+            }
             ?>
-            </div>
-
-            <div class="site-info">
-                <p>&copy; Copyright <?php echo date('Y'); ?>. <?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>. Todos los derechos reservados.</p>
-                <?php
-                $field_copy = 'general_copy';
-                if ( isset( $settings[$field_copy] ) ) {
-                    echo wpautop( $settings[$field_copy] );
-                }
-                ?>
-            </div>
         </div>
     </footer>
 </div>

@@ -57,6 +57,11 @@ html {
 
 /* Theme */
 
+body {
+    font-family: $font-quattro;
+    font-weight: normal;
+}
+
 $color-red          : #611D25;
 $color-yellow       : #FFF5D8;
 $color-purple       : #872750;
@@ -97,6 +102,7 @@ $color-text-yellow  : #FFF4D3;
     a {
         text-decoration: none;
         font-family: $font-quattro-bold;
+        font-size: 15px;
     }
 }
 
@@ -106,10 +112,14 @@ $color-text-yellow  : #FFF4D3;
     p {
         margin: 0;
         line-height: 1;
+        font-family: $font-quattro-bold;
+        color: $color-purple;
     }
 }
 
-body {
-    font-family: $font-quattro;
-    font-weight: normal;
+/* Links */
+
+.site-menu-footer a,
+.site-info a {
+    color: $color-purple;
 }
