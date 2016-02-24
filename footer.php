@@ -3,32 +3,36 @@
 ?>
     </div>
 
-    <div class="site-content-bottom">
+    <div class="site-content-bottom row">
 
-        <?php dynamic_sidebar( 'sidebar-1' ); ?>
+        <div class="sidebar">
+            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+        </div>
 
-        <?php
-            $field_footer_media = 'general_footer_media';
-            if ( isset( $settings[$field_footer_media] ) )
-            {
-                echo '<img src=' . $settings[$field_footer_media] . ' alt="Hosteria">';
-            }
+        <div class="column">
+            <?php
+                $field_footer_media = 'general_footer_media';
+                if ( isset( $settings[$field_footer_media] ) )
+                {
+                    echo '<img src=' . $settings[$field_footer_media] . ' alt="Hosteria">';
+                }
 
-            $field_footer_text = 'general_footer_text_content';
-            if ( isset( $settings[$field_footer_text] ) ) {
-                echo $settings[$field_footer_text];
-            }
-        ?>
+                $field_footer_text = 'general_footer_text_content';
+                if ( isset( $settings[$field_footer_text] ) ) {
+                    echo $settings[$field_footer_text];
+                }
+            ?>
 
-        <h4>Hágase fan</h4>
+            <h4>Hágase fan</h4>
 
-        <?php
-            $field_fb_url   = 'general_fb_url';
-            $field_fb_label = 'general_fb_label';
-            if ( isset( $settings[$field_fb_url] ) ) {
-                echo '<p>Síganos en <a href="' . $settings[$field_fb_url] . ' rel="external">'. $settings[$field_fb_label] . '</a>';
-            }
-        ?></p>
+            <?php
+                $field_fb_url   = 'general_fb_url';
+                $field_fb_label = 'general_fb_label';
+                if ( isset( $settings[$field_fb_url] ) ) {
+                    echo '<p>Síganos en <a href="' . $settings[$field_fb_url] . ' rel="external">'. $settings[$field_fb_label] . '</a>';
+                }
+            ?></p>
+        </div>
     </div>
 
     <footer id="colophon" class="site-footer row-yellow" role="contentinfo">

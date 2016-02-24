@@ -1,18 +1,19 @@
-body {
-    font-family: $font-quattro;
-    font-weight: normal;
-}
-
 $color-red           : #611D25;
 $color-yellow        : #FFF5D8;
 $color-yellow-border : #ECDEC7;
 $color-purple        : #872750;
-$color-text-purple   : #421233;
-$color-text-yellow   : #FFF4D3;
+$color-purple-text   : #421233;
+$color-yellow-text   : #FFF4D3;
+
+body {
+    font-family: $font-quattro;
+    font-weight: normal;
+    color: $color-purple-text;
+}
 
 .row-red {
     background-color: $color-red;
-    color: $color-text-yellow;
+    color: $color-yellow-text;
 }
 
 .row-yellow {
@@ -21,7 +22,7 @@ $color-text-yellow   : #FFF4D3;
 
 .row-purple {
     background-color: $color-purple;
-    color: $color-text-yellow;
+    color: $color-yellow-text;
 
     [class^="icon-"],
     [class*=" icon-"] {
