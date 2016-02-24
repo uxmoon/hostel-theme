@@ -50,76 +50,51 @@ html {
     margin: 0;
     padding-left: 0;
     text-align: center;
+
     li {
         display: inline-block;
     }
 }
 
-/* Theme */
+.site-contact {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    li {
+        padding-left: 10px;
+        padding-right: 10px;
 
-body {
-    font-family: $font-quattro;
-    font-weight: normal;
-}
-
-$color-red          : #611D25;
-$color-yellow       : #FFF5D8;
-$color-purple       : #872750;
-$color-text-purple  : #421233;
-$color-text-yellow  : #FFF4D3;
-
-.row-red {
-    background-color: $color-red;
-    color: $color-text-yellow;
-}
-
-.row-yellow {
-    background-color: $color-yellow;
-}
-
-.row-purple {
-    background-color: $color-purple;
-    color: $color-text-yellow;
-
-    [class^="icon-"],
-    [class*=" icon-"] {
-        display: inline-block;
-        width: 28px;
-        height: 28px;
-        line-height: 28px;
-        border-radius: 1000px;
-
-        color: $color-purple;
-        background-color: $color-yellow;
-        text-align: center;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
     }
 }
 
-.site-menu,
 .site-menu-footer {
-    text-align: center;
-    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
     a {
-        text-decoration: none;
-        font-family: $font-quattro-bold;
-        font-size: 15px;
+        display: inline-block;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
     }
 }
 
 .site-info {
-    text-align: center;
-    font-size: 13px;
-    p {
-        margin: 0;
-        line-height: 1;
-        font-family: $font-quattro-bold;
-        color: $color-purple;
-    }
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/* Links */
+/* Theme */
 
-.site-menu-footer a,
-.site-info a {
-    color: $color-purple;
-}
+@import 'theme.css';

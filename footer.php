@@ -33,34 +33,33 @@
 
     <footer id="colophon" class="site-footer row-yellow" role="contentinfo">
 
-        <div class="site-contact">
-            <ul>
-
+        <div class="row-purple">
+            <ul class="site-contact">
                 <?php
-                $field_email = 'general_email';
-                if ( isset( $settings[$field_email] ) ) {
-                    echo '<li>' . $settings[$field_email] . '</li>';
-                }
-
                 $field_address = 'general_address';
                 if ( isset( $settings[$field_address] ) ) {
-                    echo '<li>' . $settings[$field_address] . '</li>';
+                    echo '<li><i class="icon-map-marker"></i> ' . $settings[$field_address] . '</li>';
                 }
 
                 $field_phone = 'general_phone';
                 if ( isset( $settings[$field_phone] ) ) {
-                    echo '<li>' . $settings[$field_phone] . '</li>';
+                    echo '<li><i class="icon-old-phone"></i> ' . $settings[$field_phone] . '</li>';
                 }
 
                 $field_cellphone = 'general_cellphone';
                 if ( isset( $settings[$field_cellphone] ) ) {
-                    echo '<li>' . $settings[$field_cellphone] . '</li>';
+                    echo '<li><i class="icon-old-phone"></i> ' . $settings[$field_cellphone] . '</li>';
+                }
+
+                $field_email = 'general_email';
+                if ( isset( $settings[$field_email] ) ) {
+                    echo '<li><i class="icon-envelope"></i> ' . $settings[$field_email] . '</li>';
                 }
 
                 $field_fb_url   = 'general_fb_url';
                 $field_fb_label = 'general_fb_label';
                 if ( isset( $settings[$field_fb_url] ) ) {
-                    echo '<li><a href="' . $settings[$field_fb_url] . '">'. $settings[$field_fb_label] . '</a></li>';
+                    echo '<li><i class="icon-facebook"></i> <a href="' . $settings[$field_fb_url] . '">'. $settings[$field_fb_label] . '</a></li>';
                 }
 
                 // $field_tw_url   = 'general_tw_url';
