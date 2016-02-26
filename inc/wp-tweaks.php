@@ -122,3 +122,5 @@ add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 //     remove_action( 'wp_head', array( $wpgeo, 'wp_head' ) );
 //     remove_action( 'wp_footer', array( $wpgeo, 'wp_footer' ) );
 // }
+
+remove_action('wp_enqueue_scripts', 'wp_forecast_css');

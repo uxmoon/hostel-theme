@@ -103,3 +103,7 @@ html {
 /* Theme */
 
 @import 'theme.css';
+
+/* Plugins - WP Forecast */
+
+@import 'wp-forecast.css';
