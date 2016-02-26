@@ -6,6 +6,7 @@ $color-yellow-text   : #FFF4D3;
 $color-purple        : #872750;
 $color-purple-text   : #421233;
 $color-grey-border   : #ECE6E8;
+$color-red-text      : #C2414A;
 
 body {
     font-family: $font-quattro;
@@ -97,6 +98,17 @@ body {
         font-family: $font-quattro-bold;
         color: $color-purple;
     }
+}
+
+/* Typography */
+
+.text-phone {
+    font-size: 24px;
+}
+
+.text-email {
+    font-family: sans-serif;
+    color: $color-red-text;
 }
 
 /* Navigation */
