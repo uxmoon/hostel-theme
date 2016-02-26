@@ -10,11 +10,14 @@ get_header(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <header class="entry-header">
+                <header class="entry-header row">
                     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                 </header>
                 <div class="entry-content">
-                    <?php the_content(); ?>
+
+                    <div class="row">
+                        <?php the_content(); ?>
+                    </div>
 
                     <!-- location map -->
                     <?php
@@ -38,20 +41,22 @@ get_header(); ?>
                     // echo rwmb_meta( 'loc', $args, $post_id ); // For another post with $post_id
                     ?>
 
-                    <!-- location map text -->
-                    <?php echo rwmb_meta( 'location_map_text' ); ?>
+                    <div class="row">
+                        <!-- location map text -->
+                        <?php echo rwmb_meta( 'location_map_text' ); ?>
 
-                    <!-- location media -->
-                    <?php
-                        $images = rwmb_meta( 'location_drive_directions_media', 'type=image&size=full' );
-                        foreach ( $images as $image )
-                        {
-                            echo "<img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";
-                        }
-                    ?>
+                        <!-- location media -->
+                        <?php
+                            $images = rwmb_meta( 'location_drive_directions_media', 'type=image&size=full' );
+                            foreach ( $images as $image )
+                            {
+                                echo "<img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";
+                            }
+                        ?>
 
-                    <!-- location text -->
-                    <?php echo rwmb_meta( 'location_drive_directions_text' ); ?>
+                        <!-- location text -->
+                        <?php echo rwmb_meta( 'location_drive_directions_text' ); ?>
+                    </div>
                 </div>
             </article>
 

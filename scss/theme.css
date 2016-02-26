@@ -48,7 +48,7 @@ body {
     color: $color-yellow-text;
 }
 
-.row-yellow {
+@define-extend bg-yellow {
     background-color: $color-yellow;
 }
 
@@ -160,6 +160,24 @@ body {
     }
 }
 
+.site-content {
+    @extend bg-yellow;
+}
+
+.site-content-bottom {
+    border-top: 1px solid $color-grey-border;
+}
+
+.entry-title {
+    font-family: $font-southern;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.site-footer {
+    @extend bg-yellow;
+}
+
 /* Links */
 
 .site-menu-footer a,
@@ -169,4 +187,29 @@ body {
 
 .site-contact a {
     color: $color-yellow;
+}
+
+/* Forms */
+label {
+    font-family: $font-quattro-bold;
+    font-size: 17px;
+    color: $color-purple;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border: 1px solid $color-purple;
+}
+
+.form-button {
+    border-width: 0;
+    background-color: #872750;
+    color: $color-yellow;
+    font-size: 17px;
+    font-family: $font-quattro-bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
 }

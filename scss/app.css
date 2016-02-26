@@ -26,6 +26,7 @@ html {
     lost-center: 60rem; /* 960 pixels */
 }
 
+.form-field,
 .half,
 .column {
     lost-column: 1/1;
@@ -41,6 +42,15 @@ html {
     .column {
         lost-column: 3/5;
     }
+    .form-field {
+        lost-column: 1/3;
+    }
+}
+
+/* Typography */
+
+.entry-title {
+    margin: 0;
 }
 
 /* Layout */
@@ -50,26 +60,33 @@ html {
     padding-bottom: 16px;
 }
 
-.site-menu,
+.content-area {
+    padding-top: 30px;
+    padding-bottom: 70px;
+
+    &.page-home {
+        padding-top: 0;
+    }
+}
+
 .site-contact {
     margin: 0;
     padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    li {
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
     @media (min-width: 1000px){
         text-align: center;
 
         li {
             display: inline-block;
-        }
-    }
-}
-
-.site-contact {
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    @media (min-width: 1000px){
-        li {
+            margin: 0;
             padding-left: 10px;
             padding-right: 10px;
 
@@ -111,6 +128,11 @@ html {
     padding-bottom: 20px;
 }
 
+.site-content-bottom {
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
 /* Navigation */
 
 .main-navigation {
@@ -122,10 +144,14 @@ html {
 }
 
 .site-menu {
+    margin: 0;
+    padding-left: 0;
     border-bottom: 1px solid $color-grey-border;
 
     @media (min-width: 1000px){
+    text-align: center;
         li {
+            display: inline-block;
             position: relative;
             padding-right: 16px;
 
@@ -164,3 +190,29 @@ html {
 /* Plugins - WP Forecast */
 
 @import 'wp-forecast.css';
+
+/* Forms */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px 5px;
+}
+
+label {
+    display: block;
+}
+
+.form-message {
+    clear: both;
+}
+
+.form-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 42px;
+}

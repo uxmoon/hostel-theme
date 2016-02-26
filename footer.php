@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <footer id="colophon" class="site-footer row-yellow" role="contentinfo">
+    <footer id="colophon" class="site-footer" role="contentinfo">
 
         <div class="row-purple">
             <ul class="site-contact">
