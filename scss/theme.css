@@ -11,7 +11,13 @@ body {
     color: $color-purple-text;
 }
 
+.site-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .site-title a {
+    display:block;
     margin-left: auto;
     margin-right: auto;
 
@@ -22,7 +28,6 @@ body {
     /* hide text */
     overflow:hidden;
     text-indent:-9000px;
-    display:block;
 }
 
 .row-red {
