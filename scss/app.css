@@ -205,8 +205,23 @@ label {
     display: block;
 }
 
+.form-field {
+    margin-bottom: 20px;
+}
+
 .form-message {
+    margin-bottom: 20px;
     clear: both;
+}
+
+.form-cta {
+    position: relative;
+
+    .ajax-loader {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 .form-button {
@@ -215,4 +230,76 @@ label {
     margin-right: auto;
     width: 100px;
     height: 42px;
+}
+
+/* Plugins: Contact Form 7 */
+
+.wpcf7-response-output {
+    position: relative;
+
+    margin-top: 10px;
+    padding: 15px;
+    width: 100%;
+
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* added box sizing */
+.wpcf7-response-output:before,
+.wpcf7-response-output:after {
+    box-sizing: inherit;
+}
+
+.wpcf7 .screen-reader-response {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.wpcf7-mail-sent-ok {
+    background-color: #398f14;
+}
+
+.wpcf7-mail-sent-ng,
+.wpcf7-spam-blocked,
+.wpcf7-validation-errors {
+    background-color: #E74E40;
+}
+
+.wpcf7-form-control-wrap {
+    position: relative;
+}
+
+input.wpcf7-not-valid {
+    border-color: #E74E40;
+}
+
+span.wpcf7-not-valid-tip {
+    display: none;
+    color: transparent;
+}
+
+.wpcf7-display-none {
+    display: none;
+}
+
+.wpcf7 .ajax-loader {
+    border: none;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.wpcf7 .ajax-error {
+    display: none;
 }
