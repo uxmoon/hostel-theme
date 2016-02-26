@@ -52,7 +52,7 @@
 
                 $field_cellphone = 'general_cellphone';
                 if ( isset( $settings[$field_cellphone] ) ) {
-                    echo '<li><i class="icon-old-phone"></i> ' . $settings[$field_cellphone] . '</li>';
+                    echo '<li><i class="icon-mobile"></i> ' . $settings[$field_cellphone] . '</li>';
                 }
 
                 $field_email = 'general_email';

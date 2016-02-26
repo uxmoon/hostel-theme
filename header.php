@@ -20,6 +20,7 @@
         </div>
 
         <nav id="site-navigation" class="main-navigation" role="navigation">
+            <a href="#" class="site-menu-mobile">Menu</a>
             <?php wp_nav_menu(
                 array(
                     'theme_location' => 'primary',
