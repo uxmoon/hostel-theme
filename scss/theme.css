@@ -1,14 +1,20 @@
 $color-red           : #611D25;
 $color-yellow        : #FFF5D8;
 $color-yellow-border : #ECDEC7;
+$color-yellow-text   : #FFF4D3;
 $color-purple        : #872750;
 $color-purple-text   : #421233;
-$color-yellow-text   : #FFF4D3;
+$color-grey-border   : #ECE6E8;
 
 body {
     font-family: $font-quattro;
     font-weight: normal;
     color: $color-purple-text;
+}
+
+.site-branding {
+    background-color: $color-yellow;
+    border-bottom: 1px solid $color-grey-border;
 }
 
 .site-title {
@@ -80,6 +86,24 @@ body {
         line-height: 1;
         font-family: $font-quattro-bold;
         color: $color-purple;
+    }
+}
+
+/* Navigation */
+
+.site-menu {
+    border-bottom: 1px solid $color-grey-border;
+
+    a {
+        line-height: 39px;
+        display: block;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        &:hover {
+            background-color: $color-purple-text;
+            color: $color-yellow-text;
+        }
     }
 }
 
