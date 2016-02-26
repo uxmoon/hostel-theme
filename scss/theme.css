@@ -11,6 +11,20 @@ body {
     color: $color-purple-text;
 }
 
+.site-title a {
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url('../images/logo-hosteria-los-lenos.png');
+    width: 264px;
+    height: 173px;
+
+    /* hide text */
+    overflow:hidden;
+    text-indent:-9000px;
+    display:block;
+}
+
 .row-red {
     background-color: $color-red;
     color: $color-yellow-text;
