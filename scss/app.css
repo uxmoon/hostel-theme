@@ -43,14 +43,6 @@ html {
     }
 }
 
-/* Breakpoints */
-
-@mixin bp-large {
-    @media only screen and (min-width: 62.5em) {
-        @content;
-    }
-}
-
 /* Layout */
 
 .site-branding {
@@ -62,32 +54,43 @@ html {
 .site-contact {
     margin: 0;
     padding-left: 0;
-    text-align: center;
 
-    li {
-        display: inline-block;
+    @media (min-width: 1000px){
+        text-align: center;
+
+        li {
+            display: inline-block;
+        }
     }
 }
 
 .site-contact {
     padding-top: 10px;
     padding-bottom: 10px;
-    li {
-        padding-left: 10px;
-        padding-right: 10px;
 
-        &:first-child {
-            padding-left: 0;
-        }
-        &:last-child {
-            padding-right: 0;
+    @media (min-width: 1000px){
+        li {
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
         }
     }
 }
 
 .site-menu-footer {
+    display: none;
     padding-top: 15px;
     padding-bottom: 15px;
+
+    @media (min-width: 1000px){
+        display: block;
+    }
 
     a {
         display: inline-block;
@@ -110,32 +113,46 @@ html {
 
 /* Navigation */
 
+.main-navigation {
+    @media (max-width: 1000px) {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+    }
+}
+
 .site-menu {
     border-bottom: 1px solid $color-grey-border;
 
-    li {
-        position: relative;
-        padding-right: 16px;
-
-        &:before {
-            position: absolute;
-            top: 11px;
-            right: 0;
-        }
-
-        &:last-child {
-            padding-right: 0;
+    @media (min-width: 1000px){
+        li {
+            position: relative;
+            padding-right: 16px;
 
             &:before {
-                display: none;
+                position: absolute;
+                top: 11px;
+                right: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+
+                &:before {
+                    display: none;
+                }
             }
         }
     }
 
     a {
         display: block;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 10px;
+
+        @media (min-width: 1000px){
+            padding-left: 5px;
+            padding-right: 5px;
+        }
     }
 }
 
