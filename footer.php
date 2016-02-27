@@ -10,6 +10,7 @@
         </div>
 
         <div class="column">
+            <div class="hosteria-about">
             <?php
                 $field_footer_media = 'general_footer_media';
                 if ( isset( $settings[$field_footer_media] ) )
@@ -22,16 +23,20 @@
                     echo $settings[$field_footer_text];
                 }
             ?>
+            </div>
 
-            <h4>Hágase fan</h4>
+            <div class="hosteria-social">
+                <i class="icon-facebook"></i>
+                <h4>Hágase fan</h4>
 
-            <?php
-                $field_fb_url   = 'general_fb_url';
-                $field_fb_label = 'general_fb_label';
-                if ( isset( $settings[$field_fb_url] ) ) {
-                    echo '<p>Síganos en <a href="' . $settings[$field_fb_url] . ' rel="external">'. $settings[$field_fb_label] . '</a>';
-                }
-            ?></p>
+                <?php
+                    $field_fb_url   = 'general_fb_url';
+                    $field_fb_label = 'general_fb_label';
+                    if ( isset( $settings[$field_fb_url] ) ) {
+                        echo '<p>Síganos en <a href="' . $settings[$field_fb_url] . ' rel="external">'. $settings[$field_fb_label] . '</a>';
+                    }
+                ?></p>
+            </div>
         </div>
     </div>
 

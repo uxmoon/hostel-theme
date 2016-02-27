@@ -7,19 +7,12 @@ div.wp-forecast {
 
 /* style for current weather data */
 div.wp-forecast-curr {
-    font-size: 11px;
-    padding: 3px;
-    text-align:center;
-    margin-left:auto;
-  margin-right:auto;
 }
 /* style for forecast data */
 div.wp-forecast-curr-head {
-    font-size: 11px;
-    padding: 3px;
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: $font-quattro-bold;
 }
 
 /* style for forecast data details */
@@ -36,12 +29,9 @@ div.wp-forecast-curr-left {
 
 /* style for forecast data details right side */
 div.wp-forecast-curr-right {
-    font-size: 14px;
-    font-weight: bolder;
-    font-variant: small-caps;
-    text-align:left;
-    padding: 3px;
     float: left;
+    font-size: 24px;
+    font-family: sans-serif;
 }
 
 /* style for forecast data details right side */
@@ -57,11 +47,10 @@ div.wp-forecast-wind-right {
 
 /* style for current weather data details */
 div.wp-forecast-curr-details {
-    font-size: 11px;
-    padding: 6px;
-    text-align:left;
-    float:left;
-    width:100%;
+    clear: both;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
 }
 
 /* style for current weather icon */

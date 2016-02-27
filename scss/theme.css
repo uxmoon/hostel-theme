@@ -7,6 +7,7 @@ $color-purple        : #872750;
 $color-purple-text   : #421233;
 $color-grey-border   : #ECE6E8;
 $color-red-text      : #C2414A;
+$color-blue          : #3B5998;
 
 body {
     font-family: $font-quattro;
@@ -178,6 +179,17 @@ body {
 
 .site-content-bottom {
     border-top: 1px solid $color-grey-border;
+
+    .column {
+        padding-top: 30px;
+        border-top: 1px solid $color-grey-border;
+
+        @media (min-width: 48.063em) {
+            padding-left: 50px;
+            border-top-width: 0;
+            border-left: 1px solid $color-grey-border;
+        }
+    }
 }
 
 .entry-title {
@@ -224,4 +236,58 @@ textarea {
     text-transform: uppercase;
     text-align: center;
     border-radius: 5px;
+}
+
+/* Global - About */
+
+.hosteria-about {
+    img {
+        margin-bottom: 30px;
+    }
+    p {
+
+        line-height: 1.2;
+    }
+}
+
+/* Global - Social */
+
+.hosteria-social {
+    padding-top: 18px;
+    border-top: 1px solid $color-grey-border;
+
+    .icon-facebook {
+        float: left;
+        display: block;
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+
+        background-color: $color-blue;
+        color: $color-white;
+        text-align: center;
+        line-height: 58px;
+        font-size: 32px;
+        border-radius: 1000px;
+    }
+
+    h4 {
+        margin: 0;
+        color: $color-blue;
+        font-family: $font-quattro-bold;
+        font-size: 24px;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 19px;
+        color: $color-blue;
+    }
+
+    a {
+        font-family: $font-quattro-bold;
+        color: $color-blue;
+        text-decoration: none;
+    }
 }

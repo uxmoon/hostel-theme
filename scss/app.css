@@ -42,7 +42,8 @@ html {
     lost-column: 1/1;
 }
 
-@media only screen and (min-width: 48.063em) {
+/* 769 pixels */
+@media (min-width: 48.063em) {
     .half {
         lost-column: 1/2;
     }
