@@ -4,18 +4,20 @@ Template Name: Rates
 */
 get_header(); ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main row" role="main">
+    <div id="primary" class="content-area page-bottom">
+        <main id="main" class="site-main" role="main">
 
             <?php while ( have_posts() ) : the_post(); ?>
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <header class="entry-header">
+                <header class="entry-header row">
                     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                 </header>
                 <div class="entry-content">
                     <div class="hosteria-rates">
-                        <h2>Precios por día</h2>
+                        <div class="row">
+                            <h2>Precios por día</h2>
+                        </div>
                         <div class="row">
                             <div class="one-third">
                                 <p>Habitación Doble <strong><?php echo rwmb_meta( 'rates_double_room_rate' ); ?></strong></p>
@@ -41,13 +43,14 @@ get_header(); ?>
 
                 </div>
             </article>
-
+            <div class="hosteria-contact-us">
+                <div class="row">
+                    <span class="decoration decoration-04"></span>
+                    <p>Si quiere realizar una reserva o hacernos alguna consulta puede <a href="<?php echo esc_url( home_url( '/' ) ); ?>/contacto" class="button">contactarnos</a></p>
+                </div>
+            </div>
             <?php endwhile; ?>
-
         </main>
-        <div class="hosteria-contact-us">
-            <p>Si quiere realizar una reserva o hacernos alguna consulta puede <a href="<?php echo esc_url( home_url( '/' ) ); ?>/contacto" class="button">contactarnos</a></p>
-        </div>
     </div>
 
 <?php get_footer(); ?>

@@ -43,6 +43,10 @@ html {
     lost-column: 1/1;
 }
 
+.one-third {
+    margin-bottom: 15px;
+}
+
 /* 769 pixels */
 @media (min-width: 48.063em) {
     .half {
@@ -57,6 +61,9 @@ html {
     .one-third,
     .form-field {
         lost-column: 1/3;
+    }
+    .one-third {
+        margin-bottom: 0;
     }
 }
 
@@ -93,6 +100,10 @@ strong {
 
     &.page-home {
         padding-top: 0;
+    }
+
+    &.page-bottom {
+        padding-bottom: 0;
     }
 }
 
@@ -331,4 +342,25 @@ span.wpcf7-not-valid-tip {
 
 .wpcf7 .ajax-error {
     display: none;
+}
+
+.hosteria-contact-us {
+    margin-top: 50px;
+    padding-top: 19px;
+    padding-bottom: 30px;
+
+    .row {
+        position: relative;
+    }
+
+    .decoration {
+        display: none;
+
+        @media (min-width: 830px) {
+            display: block;
+            position: absolute;
+            top: -87px;
+            left: 0;
+        }
+    }
 }

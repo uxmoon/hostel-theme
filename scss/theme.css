@@ -233,6 +233,12 @@ textarea {
     border: 1px solid $color-purple;
 }
 
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 10px;
+}
+
 a.button,
 .form-button {
     border-width: 0;
@@ -338,6 +344,21 @@ a.button,
     @extend bg-yellow-dark;
 
     p {
+        margin-bottom: 0;
+        text-align: center;
         font-family: $font-quattro-bold;
+        @media (min-width: 830px) { text-align: right; }
+        @media (min-width: 960px) { text-align: center; }
     }
+}
+
+.decoration {
+    background-image: url('../images/ui-decoration.png');
+    background-repeat: no-repeat;
+}
+
+.decoration-04 {
+    background-position: 0 -598px;
+    width: 140px;
+    height: 145px;
 }
