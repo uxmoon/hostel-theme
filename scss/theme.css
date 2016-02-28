@@ -3,6 +3,7 @@ $color-red           : #611D25;
 $color-yellow        : #FFF5D8;
 $color-yellow-border : #ECDEC7;
 $color-yellow-text   : #FFF4D3;
+$color-yellow-dark   : #FFEEBC;
 $color-purple        : #872750;
 $color-purple-text   : #421233;
 $color-grey-border   : #ECE6E8;
@@ -52,6 +53,10 @@ body {
 
 @define-extend bg-yellow {
     background-color: $color-yellow;
+}
+
+@define-extend bg-yellow-dark {
+    background-color: $color-yellow-dark;
 }
 
 .row-purple {
@@ -196,6 +201,7 @@ body {
     font-family: $font-southern;
     font-size: 60px;
     font-weight: normal;
+    color: $color-purple;
 }
 
 .site-footer {
@@ -227,9 +233,10 @@ textarea {
     border: 1px solid $color-purple;
 }
 
+a.button,
 .form-button {
     border-width: 0;
-    background-color: #872750;
+    background-color: $color-purple;
     color: $color-yellow;
     font-size: 17px;
     font-family: $font-quattro-bold;
@@ -289,5 +296,48 @@ textarea {
         font-family: $font-quattro-bold;
         color: $color-blue;
         text-decoration: none;
+    }
+}
+
+/* page: rates */
+
+.hosteria-rates {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $color-grey-border;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 0;
+        padding: 15px 10px;
+        line-height: 1;
+        background-color: $color-red-text;
+        color: $color-yellow;
+        text-align: center;
+
+        strong {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.hosteria-hours {
+    p {
+        line-height: 1.2;
+
+        &:first-child {
+            font-size: 21px;
+            font-family: $font-quattro-bold;
+        }
+    }
+}
+
+.hosteria-contact-us {
+    @extend bg-yellow-dark;
+
+    p {
+        font-family: $font-quattro-bold;
     }
 }
