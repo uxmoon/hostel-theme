@@ -41,11 +41,10 @@ get_header(); ?>
                     // echo rwmb_meta( 'loc', $args, $post_id ); // For another post with $post_id
                     ?>
 
-                    <div class="row">
-                        <!-- location map text -->
-                        <?php echo rwmb_meta( 'location_map_text' ); ?>
+                    <?php echo rwmb_meta( 'location_map_text' ); ?>
 
-                        <!-- location media -->
+                    <div class="row">
+                        <div class="sidebar">
                         <?php
                             $images = rwmb_meta( 'location_drive_directions_media', 'type=image&size=full' );
                             foreach ( $images as $image )
@@ -53,9 +52,10 @@ get_header(); ?>
                                 echo "<img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";
                             }
                         ?>
-
-                        <!-- location text -->
-                        <?php echo rwmb_meta( 'location_drive_directions_text' ); ?>
+                        </div>
+                        <div class="column">
+                            <?php echo rwmb_meta( 'location_drive_directions_text' ); ?>
+                        </div>
                     </div>
                 </div>
             </article>
