@@ -368,4 +368,48 @@ a.button,
 .hosteria-location-map-text {
     background-color: $color-red-text;
     color: $color-yellow;
+    p {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+}
+
+.hosteria-location-text {
+    h2 {
+        text-transform: uppercase;
+    }
+    a {
+        text-decoration: none;
+        color: $color-red-text;
+
+        &:after {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+
+            content: "\f054";
+            font-family: 'icomoon';
+            color: $color-yellow;
+            text-align: center;
+            font-size: 14px;
+            line-height: 24px;
+            background-color: $color-red-text;
+
+            border-radius: 12px;
+
+            @media (max-width: 348px) {
+                display: none;
+            }
+        }
+
+        &:hover {
+            text-decoration: underline;
+            color: $color-purple-text;
+
+            &:after {
+                background-color: $color-purple-text;
+            }
+        }
+    }
 }

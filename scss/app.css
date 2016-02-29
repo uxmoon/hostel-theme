@@ -371,9 +371,27 @@ span.wpcf7-not-valid-tip {
     margin-bottom: 10px;
 }
 
+.hosteria-location-map-text-container {
+    position: relative;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hosteria-location-map-text {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 15px;
     padding: 15px;
+
+    @media (max-width: 768px) {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 769px) {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        z-index: 10;
+        width: 350px;
+    }
 }

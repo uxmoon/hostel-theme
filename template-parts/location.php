@@ -19,6 +19,12 @@ get_header(); ?>
                         <?php the_content(); ?>
                     </div>
 
+                    <div class="hosteria-location-map-text-container">
+                        <div class="hosteria-location-map-text">
+                            <?php echo rwmb_meta( 'location_map_text' ); ?>
+                        </div>
+                    </div>
+
                     <div class="hosteria-location-map">
                     <?php
 
@@ -37,10 +43,6 @@ get_header(); ?>
                     );
                     echo rwmb_meta( 'location_map', $args );
                     ?>
-                    </div>
-
-                    <div class="hosteria-location-map-text">
-                        <?php echo rwmb_meta( 'location_map_text' ); ?>
                     </div>
 
                     <div class="row">
