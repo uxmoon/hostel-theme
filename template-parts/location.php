@@ -19,29 +19,29 @@ get_header(); ?>
                         <?php the_content(); ?>
                     </div>
 
-                    <!-- location map -->
+                    <div class="hosteria-location-map">
                     <?php
 
                     $args = array(
                         'type'         => 'map',
-                        'width'        => '100%', // Map width, default is 640px. Can be '%' or 'px'
-                        'height'       => '480px', // Map height, default is 480px. Can be '%' or 'px'
-                        // 'zoom'         => 14,  // Map zoom, default is the value set in admin, and if it's omitted - 14
-                        'marker'       => true, // Display marker? Default is 'true',
-                        'marker_title' => '', // Marker title when hover
-                        'info_window'  => '<h3>Info Window Title</h3>Info window content. HTML <strong>allowed</strong>', // Info window content, can be anything. HTML allowed.
+                        'width'        => '100%',
+                        'height'       => '480px',
+                        'marker'       => true,
                         'js_options'   => array(
-                            'mapTypeId'   => 'HYBRID',
-                            'zoomControl' => false,
-                            'scrollwheel' => false,
-                            'zoom'        => 17, // You can use 'zoom' inside 'js_options' or as a separated parameter
+                            'mapTypeId'        => 'HYBRID',
+                            'zoomControl'      => false,
+                            'zoom'             => 17,
+                            'scrollwheel'      => false,
+                            'disableDefaultUI' => true,
                         )
                     );
-                    echo rwmb_meta( 'location_map', $args ); // For current post
-                    // echo rwmb_meta( 'loc', $args, $post_id ); // For another post with $post_id
+                    echo rwmb_meta( 'location_map', $args );
                     ?>
+                    </div>
 
-                    <?php echo rwmb_meta( 'location_map_text' ); ?>
+                    <div class="hosteria-location-map-text">
+                        <?php echo rwmb_meta( 'location_map_text' ); ?>
+                    </div>
 
                     <div class="row">
                         <div class="sidebar">
@@ -53,7 +53,7 @@ get_header(); ?>
                             }
                         ?>
                         </div>
-                        <div class="column">
+                        <div class="column hosteria-location-text">
                             <?php echo rwmb_meta( 'location_drive_directions_text' ); ?>
                         </div>
                     </div>

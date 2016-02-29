@@ -362,3 +362,10 @@ a.button,
     width: 140px;
     height: 145px;
 }
+
+/* page: location */
+
+.hosteria-location-map-text {
+    background-color: $color-red-text;
+    color: $color-yellow;
+}

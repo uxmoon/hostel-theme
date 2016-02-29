@@ -364,3 +364,16 @@ span.wpcf7-not-valid-tip {
         }
     }
 }
+
+/* page: location */
+
+.hosteria-location-map {
+    margin-bottom: 10px;
+}
+
+.hosteria-location-map-text {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
