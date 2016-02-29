@@ -357,6 +357,12 @@ a.button,
     background-repeat: no-repeat;
 }
 
+.decoration-03 {
+    background-position: 0 -398px;
+    width: 114px;
+    height: 199px;
+}
+
 .decoration-04 {
     background-position: 0 -598px;
     width: 140px;
@@ -412,4 +418,13 @@ a.button,
             }
         }
     }
+}
+
+/* page: services*/
+
+.hosteria-services-list {
+}
+
+.hosteria-services-tourism {
+    @extend bg-yellow-dark;
 }
