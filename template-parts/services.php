@@ -46,7 +46,7 @@ get_header(); ?>
                         <h2>El Turismo Slow se basa en 10 pilares:</h2>
                     </div>
 
-                    <div class="row">
+                    <div class="hosteria-services-pillars row">
                         <div class="half">
                             <?php echo rwmb_meta( 'services_pilars_text' ); ?>
                         </div>
