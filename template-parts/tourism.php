@@ -10,20 +10,25 @@ get_header(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <header class="entry-header">
+                <header class="entry-header row">
                     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                 </header>
                 <div class="entry-content">
-                <?php wp_nav_menu(
-                    array(
-                        'theme_location' => 'sidebar',
-                        'menu_id'        => '',
-                        'container'      => '',
-                        // 'menu_class'     => ''
-                        )
-                    );
-                ?>
-                    <?php the_content(); ?>
+                    <div class="row">
+                        <div class="one-third">
+                        <?php wp_nav_menu(
+                            array(
+                                'theme_location' => 'sidebar',
+                                'menu_id'        => '',
+                                'container'      => '',
+                                )
+                            );
+                        ?>
+                        </div>
+                        <div class="two-thirds hosteria-tourism-history">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
                 </div>
             </article>
 
