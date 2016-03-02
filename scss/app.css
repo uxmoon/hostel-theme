@@ -443,3 +443,14 @@ span.wpcf7-not-valid-tip {
         }
     }
 }
+
+.hosteria-services-peaceful {
+    padding-top: 40px;
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}

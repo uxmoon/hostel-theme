@@ -428,3 +428,11 @@ a.button,
 .hosteria-services-tourism {
     @extend bg-yellow-dark;
 }
+
+.hosteria-services-peaceful {
+    h2 {
+        margin-top: 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

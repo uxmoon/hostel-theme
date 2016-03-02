@@ -26,18 +26,35 @@ get_header(); ?>
                         </div>
                     </div>
 
-                    <?php
-                        $images = rwmb_meta( 'services_tourism_media', 'type=image&size=full' );
-                        foreach ( $images as $image )
-                        {
-                            echo "<img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";
-                        }
-                    ?>
-                    <?php echo rwmb_meta( 'services_tourism_text' ); ?>
+                    <div class="hosteria-services-peaceful row">
+                        <div class="sidebar">
+                            <h2>Turismo tranquilo</h2>
+                            <?php
+                                $images = rwmb_meta( 'services_tourism_media', 'type=image&size=full' );
+                                foreach ( $images as $image )
+                                {
+                                    echo "<img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";
+                                }
+                            ?>
+                        </div>
+                        <div class="column">
+                            <?php echo rwmb_meta( 'services_tourism_text' ); ?>
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <h2>El Turismo Slow se basa en 10 pilares:</h2>
+                    </div>
 
-                    <?php echo rwmb_meta( 'services_pilars_text' ); ?>
-                    <?php echo rwmb_meta( 'services_pilars_text_2' ); ?>
+                    <div class="row">
+                        <div class="half">
+                            <?php echo rwmb_meta( 'services_pilars_text' ); ?>
+                        </div>
+                        <div class="half">
+                            <?php echo rwmb_meta( 'services_pilars_text_2' ); ?>
+                        </div>
+                    </div>
+
                 </div>
             </article>
 
