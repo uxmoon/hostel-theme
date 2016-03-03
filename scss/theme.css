@@ -1,5 +1,6 @@
 $color-white         : #FFFFFF;
 $color-red           : #611D25;
+$color-red-border    : #D96F77;
 $color-yellow        : #FFF5D8;
 $color-yellow-border : #ECDEC7;
 $color-yellow-text   : #FFF4D3;
@@ -420,7 +421,7 @@ a.button,
     }
 }
 
-/* page: services*/
+/* page: services */
 
 .hosteria-services-list {
 }
@@ -434,5 +435,27 @@ a.button,
         margin-top: 0;
         text-transform: uppercase;
         text-align: center;
+    }
+}
+
+/* page: tourism */
+
+.hosteria-tourism-nav {
+    background-color: $color-red-text;
+    li {
+        border-bottom: 1px solid $color-red-border;
+        list-style-type: none;
+    }
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-yellow;
+        display: block;
+
+        &:hover,
+        &:active {
+            background-color: $color-purple;
+        }
     }
 }

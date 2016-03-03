@@ -477,3 +477,15 @@ span.wpcf7-not-valid-tip {
         clear: both;
     }
 }
+
+/* page: tourism */
+
+.hosteria-tourism-nav {
+    ul {
+        margin: 0;
+        padding-left: 0;
+    }
+    a {
+        padding: 15px 8px;
+    }
+}

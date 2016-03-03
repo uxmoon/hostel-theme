@@ -15,7 +15,7 @@ get_header(); ?>
                 </header>
                 <div class="entry-content">
                     <div class="row">
-                        <div class="one-third">
+                        <div class="hosteria-tourism-nav one-third">
                         <?php wp_nav_menu(
                             array(
                                 'theme_location' => 'sidebar',
