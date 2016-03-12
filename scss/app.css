@@ -23,204 +23,204 @@ html {
 @lost gutter 20px;
 
 .row {
-    lost-center: 60rem; /* 960 pixels */
+  lost-center: 60rem; /* 960 pixels */
 
-    @media (max-width: 980px) {
-        padding-left: 10px;
-        padding-right: 10px;
+  @media (max-width: 980px) {
+    padding-left: 10px;
+    padding-right: 10px;
 
-        .row {
-            padding-left: 0;
-            padding-right: 0;
-        }
+    .row {
+      padding-left: 0;
+      padding-right: 0;
     }
+  }
 }
 
 .one-third,
 .form-field,
 .half,
 .column {
-    lost-column: 1/1;
+  lost-column: 1/1;
 }
 
 .one-third {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /* 769 pixels */
 @media (min-width: 48.063em) {
-    .half {
-        lost-column: 1/2;
-    }
-    .sidebar {
-        lost-column: 2/5;
-    }
-    .column {
-        lost-column: 3/5;
-    }
-    .two-thirds {
-        lost-column: 2/3;
-    }
-    .one-third,
-    .form-field {
-        lost-column: 1/3;
-    }
-    .one-third {
-        margin-bottom: 0;
-    }
+  .half {
+    lost-column: 1/2;
+  }
+  .sidebar {
+    lost-column: 2/5;
+  }
+  .column {
+    lost-column: 3/5;
+  }
+  .two-thirds {
+    lost-column: 2/3;
+  }
+  .one-third,
+  .form-field {
+    lost-column: 1/3;
+  }
+  .one-third {
+    margin-bottom: 0;
+  }
 }
 
 /* Typography */
 
 p, li {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 strong {
-    font-weight: normal;
-    font-family: $font-quattro-bold;
+  font-weight: normal;
+  font-family: $font-quattro-bold;
 }
 
 .entry-title {
-    margin: 0;
+  margin: 0;
 }
 
 /* Layout */
 
 .site-branding {
-    padding-top: 16px;
-    padding-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .content-area {
-    padding-top: 30px;
-    padding-bottom: 70px;
+  padding-top: 30px;
+  padding-bottom: 70px;
 
-    &.page-home {
-        padding-top: 0;
-    }
+  &.page-home {
+    padding-top: 0;
+  }
 
-    &.page-bottom {
-        padding-bottom: 0;
-    }
+  &.page-bottom {
+    padding-bottom: 0;
+  }
 }
 
 .site-contact {
-    margin: 0;
-    padding-left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media (min-width: 1000px){
+    text-align: center;
 
     li {
-        margin-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+      display: inline-block;
+      margin: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
     }
-
-    @media (min-width: 1000px){
-        text-align: center;
-
-        li {
-            display: inline-block;
-            margin: 0;
-            padding-left: 10px;
-            padding-right: 10px;
-
-            &:first-child {
-                padding-left: 0;
-            }
-            &:last-child {
-                padding-right: 0;
-            }
-        }
-    }
+  }
 }
 
 .site-menu-footer {
-    display: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  display: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-    @media (min-width: 1000px){
-        display: block;
+  @media (min-width: 1000px){
+    display: block;
+  }
+
+  a {
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    &:first-child {
+      padding-left: 0;
     }
-
-    a {
-        display: inline-block;
-        padding-right: 10px;
-        padding-left: 10px;
-
-        &:first-child {
-            padding-left: 0;
-        }
-        &:last-child {
-            padding-right: 0;
-        }
+    &:last-child {
+      padding-right: 0;
     }
+  }
 }
 
 .site-info {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .site-content-bottom {
-    padding-top: 40px;
-    padding-bottom: 35px;
+  padding-top: 40px;
+  padding-bottom: 35px;
 }
 
 /* Navigation */
 
 .main-navigation {
-    @media (max-width: 1000px) {
-        margin-left: 10px;
-        margin-right: 10px;
-        padding-bottom: 10px;
-    }
+  @media (max-width: 1000px) {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .site-menu {
-    margin: 0;
-    padding-left: 0;
-    border-bottom: 1px solid $color-grey-border;
+  margin: 0;
+  padding-left: 0;
+  border-bottom: 1px solid $color-grey-border;
+
+  @media (min-width: 1000px){
+    text-align: center;
+    li {
+      display: inline-block;
+      position: relative;
+      padding-right: 16px;
+
+      &:before {
+        position: absolute;
+        top: 11px;
+        right: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  a {
+    display: block;
+    padding-left: 10px;
 
     @media (min-width: 1000px){
-    text-align: center;
-        li {
-            display: inline-block;
-            position: relative;
-            padding-right: 16px;
-
-            &:before {
-                position: absolute;
-                top: 11px;
-                right: 0;
-            }
-
-            &:last-child {
-                padding-right: 0;
-
-                &:before {
-                    display: none;
-                }
-            }
-        }
+      padding-left: 5px;
+      padding-right: 5px;
     }
-
-    a {
-        display: block;
-        padding-left: 10px;
-
-        @media (min-width: 1000px){
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-    }
+  }
 }
 
 
@@ -238,254 +238,269 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-    width: 100%;
-    padding: 8px 5px;
+  width: 100%;
+  padding: 8px 5px;
 }
 
 label {
-    display: block;
+  display: block;
 }
 
 .form-field {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .form-message {
-    margin-bottom: 20px;
-    clear: both;
+  margin-bottom: 20px;
+  clear: both;
 }
 
 .form-cta {
-    position: relative;
+  position: relative;
 
-    .ajax-loader {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
+  .ajax-loader {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .form-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 42px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 42px;
 }
 
 /* Plugins: Contact Form 7 */
 
 .wpcf7-response-output {
-    position: relative;
+  position: relative;
 
-    margin-top: 10px;
-    padding: 15px;
-    width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  width: 100%;
 
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
 
-    border-radius: 3px;
-    box-sizing: border-box;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
 /* added box sizing */
 .wpcf7-response-output:before,
 .wpcf7-response-output:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .wpcf7 .screen-reader-response {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    width: 1px;
-    margin: 0;
-    padding: 0;
-    border: 0;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .wpcf7-mail-sent-ok {
-    background-color: #398f14;
+  background-color: #398f14;
 }
 
 .wpcf7-mail-sent-ng,
 .wpcf7-spam-blocked,
 .wpcf7-validation-errors {
-    background-color: #E74E40;
+  background-color: #E74E40;
 }
 
 .wpcf7-form-control-wrap {
-    position: relative;
+  position: relative;
 }
 
 input.wpcf7-not-valid,
 textarea.wpcf7-not-valid {
-    border-color: #E74E40;
-    background-color: #fbf3f4;
+  border-color: #E74E40;
+  background-color: #fbf3f4;
 }
 
 span.wpcf7-not-valid-tip {
-    display: none;
-    color: transparent;
+  display: none;
+  color: transparent;
 }
 
 .wpcf7-display-none {
-    display: none;
+  display: none;
 }
 
 .wpcf7 .ajax-loader {
-    border: none;
-    vertical-align: middle;
-    margin-left: 4px;
+  border: none;
+  vertical-align: middle;
+  margin-left: 4px;
 }
 
 .wpcf7 .ajax-error {
-    display: none;
+  display: none;
 }
 
 .hosteria-contact-us {
-    margin-top: 50px;
-    padding-top: 19px;
-    padding-bottom: 30px;
+  margin-top: 50px;
+  padding-top: 19px;
+  padding-bottom: 30px;
 
-    .row {
-        position: relative;
+  .row {
+    position: relative;
+  }
+
+  .decoration {
+    display: none;
+
+    @media (min-width: 830px) {
+      display: block;
+      position: absolute;
+      top: -87px;
+      left: 0;
     }
-
-    .decoration {
-        display: none;
-
-        @media (min-width: 830px) {
-            display: block;
-            position: absolute;
-            top: -87px;
-            left: 0;
-        }
-    }
+  }
 }
 
 /* page: location */
 
 .hosteria-location-map {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .hosteria-location-map-text-container {
-    position: relative;
-    max-width: 60rem;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hosteria-location-map-text {
-    padding: 15px;
+  padding: 15px;
 
-    @media (max-width: 768px) {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 15px;
-    }
+  @media (max-width: 768px) {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
 
-    @media (min-width: 769px) {
-        position: absolute;
-        top: 100px;
-        right: 0;
-        z-index: 10;
-        width: 350px;
-    }
+  @media (min-width: 769px) {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 10;
+    width: 350px;
+  }
 }
 
 /* page: services*/
 
 .hosteria-services-list {
+  ul {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    @media (min-width: 700px) {
+      margin-bottom: 45px;
+    }
+  }
+
+  @media (min-width: 740px) {
     ul {
-        margin-top: 0;
-        margin-bottom: 15px;
+      overflow: hidden;
 
-        @media (min-width: 700px) {
-            margin-bottom: 45px;
-        }
+      li {
+        float: left;
+        width: 50%;
+      }
     }
-
-    @media (min-width: 740px) {
-        ul {
-            overflow: hidden;
-
-            li {
-                float: left;
-                width: 50%;
-            }
-        }
-    }
+  }
 }
 
 .hosteria-services-tourism {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-    .row {
-        position: relative;
+  .row {
+    position: relative;
 
-        @media (min-width: 700px) {
-            padding-left: 130px;
-        }
-
-        .decoration {
-            display: none;
-
-            @media (min-width: 700px) {
-                display: block;
-                position: absolute;
-                top: -40px;
-                left: 0;
-            }
-        }
+    @media (min-width: 700px) {
+      padding-left: 130px;
     }
+
+    .decoration {
+      display: none;
+
+      @media (min-width: 700px) {
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: 0;
+      }
+    }
+  }
 }
 
 .hosteria-services-peaceful {
-    padding-top: 40px;
+  padding-top: 40px;
 
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
-        @media (max-width: 768px) {
-            margin-bottom: 15px;
-        }
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
     }
+  }
 }
 
 .hosteria-services-pillars {
-    ol {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 
 .hosteria-tourism-history {
-    img {
-        float: left;
-    }
-    p {
-        clear: both;
-    }
+  img {
+    float: left;
+  }
+  p {
+    clear: both;
+  }
 }
 
 /* page: tourism */
 
 .hosteria-tourism-nav {
-    ul {
-        margin: 0;
-        padding-left: 0;
-    }
-    a {
-        padding: 15px 8px;
-    }
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  a {
+    padding: 15px 8px;
+  }
+}
+
+/* page: home */
+
+.home-featured-text {
+  min-height: 370px;
+  text-align: center;
+
+  p {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
 }

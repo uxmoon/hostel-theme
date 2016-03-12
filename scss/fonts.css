@@ -1,113 +1,103 @@
 @font-face {
-    font-family: 'quattrocentoregular';
-    src: url('../fonts/quattrocento-webfont.eot');
-    src: url('../fonts/quattrocento-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/quattrocento-webfont.woff') format('woff'),
-         url('../fonts/quattrocento-webfont.ttf') format('truetype'),
-         url('../fonts/quattrocento-webfont.svg#quattrocentoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'quattrocentoregular';
+  src: url('../fonts/quattrocento-webfont.eot');
+  src: url('../fonts/quattrocento-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/quattrocento-webfont.woff') format('woff'),
+  url('../fonts/quattrocento-webfont.ttf') format('truetype'),
+  url('../fonts/quattrocento-webfont.svg#quattrocentoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'quattrocentobold';
-    src: url('../fonts/quattrocento-bold-webfont.eot');
-    src: url('../fonts/quattrocento-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/quattrocento-bold-webfont.woff') format('woff'),
-         url('../fonts/quattrocento-bold-webfont.ttf') format('truetype'),
-         url('../fonts/quattrocento-bold-webfont.svg#quattrocentobold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'quattrocentobold';
+  src: url('../fonts/quattrocento-bold-webfont.eot');
+  src: url('../fonts/quattrocento-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/quattrocento-bold-webfont.woff') format('woff'),
+  url('../fonts/quattrocento-bold-webfont.ttf') format('truetype'),
+  url('../fonts/quattrocento-bold-webfont.svg#quattrocentobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'southern_aire_personal_use_Rg';
-    src: url('../fonts/southernaire-webfont.eot');
-    src: url('../fonts/southernaire-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/southernaire-webfont.woff') format('woff'),
-         url('../fonts/southernaire-webfont.ttf') format('truetype'),
-         url('../fonts/southernaire-webfont.svg#southern_aire_personal_use_Rg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'southern_aire_personal_use_Rg';
+  src: url('../fonts/southernaire-webfont.eot');
+  src: url('../fonts/southernaire-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/southernaire-webfont.woff') format('woff'),
+  url('../fonts/southernaire-webfont.ttf') format('truetype'),
+  url('../fonts/southernaire-webfont.svg#southern_aire_personal_use_Rg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 $font-quattro       : 'quattrocentoregular';
 $font-quattro-bold  : 'quattrocentobold';
 $font-southern      : 'southern_aire_personal_use_Rg';
+$font-serif         : Georgia, Times, 'Times New Roman', serif;
 
 @font-face {
-    font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?j2z1zq');
-    src:    url('../fonts/icomoon.eot?j2z1zq#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?j2z1zq') format('truetype'),
-        url('../fonts/icomoon.woff?j2z1zq') format('woff'),
-        url('../fonts/icomoon.svg?j2z1zq#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?aw8vpd');
-    src:    url('../fonts/icomoon.eot?aw8vpd#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?aw8vpd') format('truetype'),
-        url('../fonts/icomoon.woff?aw8vpd') format('woff'),
-        url('../fonts/icomoon.svg?aw8vpd#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'icomoon';
+  src:    url('../fonts/icomoon.eot?aw8vpd');
+  src:    url('../fonts/icomoon.eot?aw8vpd#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?aw8vpd') format('truetype'),
+  url('../fonts/icomoon.woff?aw8vpd') format('woff'),
+  url('../fonts/icomoon.svg?aw8vpd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-dot-single:before {
-    content: "\e901";
+  content: "\e901";
 }
 .icon-old-phone:before {
-    content: "\e900";
+  content: "\e900";
 }
 .icon-map-marker:before {
-    content: "\f041";
+  content: "\f041";
 }
 .icon-chevron-right:before {
-    content: "\f054";
+  content: "\f054";
 }
 .icon-facebook:before {
-    content: "\f09a";
+  content: "\f09a";
 }
 .icon-facebook-f:before {
-    content: "\f09a";
+  content: "\f09a";
 }
 .icon-bars:before {
-    content: "\f0c9";
+  content: "\f0c9";
 }
 .icon-navicon:before {
-    content: "\f0c9";
+  content: "\f0c9";
 }
 .icon-reorder:before {
-    content: "\f0c9";
+  content: "\f0c9";
 }
 .icon-envelope:before {
-    content: "\f0e0";
+  content: "\f0e0";
 }
 .icon-mobile:before {
-    content: "\f10b";
+  content: "\f10b";
 }
 .icon-mobile-phone:before {
-    content: "\f10b";
+  content: "\f10b";
 }
 
