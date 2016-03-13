@@ -14,7 +14,7 @@ get_header(); ?>
       <div class="entry-content">
 
         <!-- slider -->
-        <div class="slider-home">
+        <div class="slider-home bxslider">
           <?php $images = rwmb_meta( 'image_advanced', 'type=image&size=full_url' );
           foreach ( $images as $image ) {
             echo "<div><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='Hosteria Los Leños'></div>";
@@ -22,7 +22,6 @@ get_header(); ?>
         </div>
 
         <!-- featured services bg image -->
-        <div class="row">
           <?php
           $images = rwmb_meta( 'home_featured_bg_image', 'type=image&size=full' );
           foreach ( $images as $image )
@@ -31,35 +30,42 @@ get_header(); ?>
           }
           ?>
 
-          <!-- featured service -->
-          <?php echo rwmb_meta( 'first_featured_title' ); ?>
-          <?php
-          $images = rwmb_meta( 'first_featured_media', 'type=image&size=full' );
-          foreach ( $images as $image )
-          {
-            echo "<img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";
-          }
-          ?>
-
-          <!-- featured service -->
-          <?php echo rwmb_meta( 'second_featured_title' ); ?>
-          <?php
-          $images = rwmb_meta( 'second_featured_media', 'type=image&size=full' );
-          foreach ( $images as $image )
-          {
-            echo "<img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";
-          }
-          ?>
-
-          <!-- featured service -->
-          <?php echo rwmb_meta( 'third_featured_title' ); ?>
-          <?php
-          $images = rwmb_meta( 'third_featured_media', 'type=image&size=full' );
-          foreach ( $images as $image )
-          {
-            echo "<img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";
-          }
-          ?>
+        <div class="home-featured-services">
+          <div class="row">
+          <div class="one-third">
+              <?php
+              $images = rwmb_meta( 'first_featured_media', 'type=image&size=full' );
+              foreach ( $images as $image )
+              {
+                echo "<div class='item' style='background-image:url({$image['url']});'>";
+              }
+              ?>
+              <h2><?php echo rwmb_meta( 'first_featured_title' ); ?></h2>
+            </div>
+          </div>
+          <div class="one-third">
+            <?php
+            $images = rwmb_meta( 'second_featured_media', 'type=image&size=full' );
+            foreach ( $images as $image )
+            {
+              echo "<div class='item' style='background-image:url({$image['url']});'>";
+            }
+            ?>
+              <h2><?php echo rwmb_meta( 'second_featured_title' ); ?></h2>
+            </div>
+          </div>
+          <div class="one-third">
+            <?php
+            $images = rwmb_meta( 'third_featured_media', 'type=image&size=full' );
+            foreach ( $images as $image )
+            {
+              echo "<div class='item' style='background-image:url({$image['url']});'>";
+            }
+            ?>
+              <h2><?php echo rwmb_meta( 'third_featured_title' ); ?></h2>
+            </div>
+          </div>
+          </div>
         </div>
 
         <!-- featured text -->
@@ -68,9 +74,10 @@ get_header(); ?>
         </div>
 
         <!-- tourism text -->
-        <div class="row">
+        <div class="row home-tourism-text">
           <div class="sidebar">
-            <h3>Elija hacer turismo tranquilo</h3>
+            <h3>Elija hacer <strong>turismo tranquilo</strong></h3>
+            <div class="decoration decoration-01"></div>
           </div>
           <div class="content">
             <?php echo rwmb_meta( 'home_tourism_text' ); ?>

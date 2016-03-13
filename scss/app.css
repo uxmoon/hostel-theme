@@ -492,8 +492,32 @@ span.wpcf7-not-valid-tip {
 
 /* page: home */
 
+.page-home {
+  position: relative; /* for circles */
+}
+
+.home-featured-services {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+
+  .item {
+    position: relative;
+    width: 277px;
+    height: 277px;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+}
+
 .home-featured-text {
   min-height: 370px;
+  padding-top: 170px;
   text-align: center;
 
   p {
@@ -504,3 +528,11 @@ span.wpcf7-not-valid-tip {
   }
 
 }
+
+.home-tourism-text {
+  padding-top: 35px;
+}
+
+/* slider */
+
+@import 'jquery.bxslider.css'

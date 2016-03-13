@@ -1,7 +1,10 @@
 jQuery(document).ready(function($) {
-    // $(document).foundation();
-
-    $('.slider-fotos').slick({
-      infinite: true
-    });
+  $('.bxslider').bxSlider({
+    auto: true,
+    controls: false,
+    mode: 'fade',
+    pager: false,
+    pause: 6000,
+    speed: 750
+  });
 });
