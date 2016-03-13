@@ -8,6 +8,8 @@ jQuery(document).ready(function($) {
     speed: 750
   });
   $('.bxfotos').bxSlider({
-    pager: false
+    pager: false,
+    prevText: '',
+    nextText: ''
   });
 });

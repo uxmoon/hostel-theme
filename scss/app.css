@@ -536,8 +536,15 @@ span.wpcf7-not-valid-tip {
 /* Fotos */
 
 .hosteria-galeria {
-  padding: 25px;
   margin-bottom: 35px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 640px) {
+    padding-bottom: 25px;
+  }
 }
 
 /* slider */

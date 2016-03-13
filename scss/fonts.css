@@ -40,11 +40,11 @@ $font-serif         : Georgia, Times, 'Times New Roman', serif;
 
 @font-face {
   font-family: 'icomoon';
-  src:    url('../fonts/icomoon.eot?aw8vpd');
-  src:    url('../fonts/icomoon.eot?aw8vpd#iefix') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?aw8vpd') format('truetype'),
-  url('../fonts/icomoon.woff?aw8vpd') format('woff'),
-  url('../fonts/icomoon.svg?aw8vpd#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?bm3vy8');
+  src: url('../fonts/icomoon.eot?bm3vy8#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?bm3vy8') format('truetype'),
+  url('../fonts/icomoon.woff?bm3vy8') format('woff'),
+  url('../fonts/icomoon.svg?bm3vy8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -73,22 +73,16 @@ $font-serif         : Georgia, Times, 'Times New Roman', serif;
 .icon-map-marker:before {
   content: "\f041";
 }
-.icon-chevron-right:before {
+.icon-arrow-left:before {
+  content: "\f053";
+}
+.icon-arrow-right:before {
   content: "\f054";
 }
 .icon-facebook:before {
   content: "\f09a";
 }
-.icon-facebook-f:before {
-  content: "\f09a";
-}
-.icon-bars:before {
-  content: "\f0c9";
-}
-.icon-navicon:before {
-  content: "\f0c9";
-}
-.icon-reorder:before {
+.icon-menu:before {
   content: "\f0c9";
 }
 .icon-envelope:before {
@@ -97,7 +91,6 @@ $font-serif         : Georgia, Times, 'Times New Roman', serif;
 .icon-mobile:before {
   content: "\f10b";
 }
-.icon-mobile-phone:before {
-  content: "\f10b";
-}
+
+
 

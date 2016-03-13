@@ -556,15 +556,109 @@ a.button,
   h2 {
     margin-top: 0;
     margin-bottom: 10px;
+    color: $color-purple;
     line-height: 1;
     font-family: $font-southern;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: normal;
+
+    @media (min-width: 640px) {
+      font-size: 60px;
+
+      &:before,
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 35px;
+        height: 9px;
+        background-image: url('../images/icon-misc-dark.png');
+        margin-bottom: 15px;
+      }
+
+      &:before {
+        margin-right: 20px;
+      }
+
+      &:after {
+        margin-left: 20px;
+      }
+
+    }
+
   }
 
   .bx-wrapper img {
     margin-left: auto;
     margin-right: auto;
+    height: auto;
+  }
+
+  .bx-wrapper .bx-controls-direction a {
+    text-indent: 0;
+    text-decoration: none;
+
+    @media (max-width: 640px) {
+      top: auto;
+      bottom: -35px;
+    }
+  }
+
+  .bx-wrapper .bx-prev,
+  .bx-wrapper .bx-next {
+    background: none;
+    background-color: $color-red-text;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+
+    &:before {
+      font-family: 'icomoon';
+      color: $color-yellow;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &:hover {
+      background-color: $color-purple;
+      color: $color-yellow-dark;
+    }
+
+    @media (min-width: 640px) {
+      width: 60px;
+      height: 60px;
+      border-radius: 3px;
+
+      &:before {
+        font-family: 'icomoon';
+        color: $color-yellow;
+        font-size: 30px;
+        line-height: 60px;
+      }
+
+    }
+
+  }
+
+  @media (max-width: 640px) {
+
+    .bx-wrapper .bx-prev {
+      left: 0;
+      width: 90px;
+    }
+
+    .bx-wrapper .bx-next {
+      right: 0;
+      width: 90px;
+    }
+
+  }
+
+  .bx-wrapper .bx-prev:before {
+    content: "\f053";
+  }
+
+  .bx-wrapper .bx-next:before {
+    content: "\f054";
   }
 
 }
