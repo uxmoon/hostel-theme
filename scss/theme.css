@@ -254,6 +254,10 @@ a.button,
 
 /* Homepage */
 
+.bx-wrapper img {
+  height: auto;
+}
+
 .home-featured-services {
 
   a {

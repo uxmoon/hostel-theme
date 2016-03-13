@@ -497,6 +497,11 @@ span.wpcf7-not-valid-tip {
 }
 
 .home-featured-services {
+
+  @media (max-width: 870px) {
+    display: none;
+  }
+
   position: absolute;
   top: 270px;
   left: 0;
@@ -516,9 +521,10 @@ span.wpcf7-not-valid-tip {
 }
 
 .home-featured-text {
+
   min-height: 370px;
-  padding-top: 170px;
   text-align: center;
+
 
   p {
     max-width: 60rem;
