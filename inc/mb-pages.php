@@ -55,6 +55,21 @@ function loslenos_register_meta_boxes( $meta_boxes )
         'max_file_uploads' => 1,
         ),
       array(
+        'name'        => __( 'Vínculo', 'loslenos' ),
+        'id'          => "first_featured_page",
+        'type'        => 'post',
+        // Post type
+        'post_type'   => 'page',
+        // Field type, either 'select' or 'select_advanced' (default)
+        'field_type'  => 'select',
+        'placeholder' => __( 'Seleccionar página', 'loslenos' ),
+        // Query arguments (optional). No settings means get all published posts
+        'query_args'  => array(
+          'post_status'    => 'publish',
+          'posts_per_page' => - 1,
+        ),
+      ),
+      array(
         'name'        => __( 'Titulo 2', 'loslenos' ),
         'id'          => 'second_featured_title',
         'type'        => 'text',
@@ -68,6 +83,21 @@ function loslenos_register_meta_boxes( $meta_boxes )
         'max_file_uploads' => 1,
         ),
       array(
+        'name'        => __( 'Vínculo', 'loslenos' ),
+        'id'          => "second_featured_page",
+        'type'        => 'post',
+        // Post type
+        'post_type'   => 'page',
+        // Field type, either 'select' or 'select_advanced' (default)
+        'field_type'  => 'select',
+        'placeholder' => __( 'Seleccionar página', 'loslenos' ),
+        // Query arguments (optional). No settings means get all published posts
+        'query_args'  => array(
+          'post_status'    => 'publish',
+          'posts_per_page' => - 1,
+        ),
+      ),
+      array(
         'name'        => __( 'Titulo 3', 'loslenos' ),
         'id'          => 'third_featured_title',
         'type'        => 'text',
@@ -80,6 +110,21 @@ function loslenos_register_meta_boxes( $meta_boxes )
         'force_delete'     => true,
         'max_file_uploads' => 1,
         ),
+      array(
+        'name'        => __( 'Vínculo', 'loslenos' ),
+        'id'          => "third_featured_page",
+        'type'        => 'post',
+        // Post type
+        'post_type'   => 'page',
+        // Field type, either 'select' or 'select_advanced' (default)
+        'field_type'  => 'select',
+        'placeholder' => __( 'Seleccionar página', 'loslenos' ),
+        // Query arguments (optional). No settings means get all published posts
+        'query_args'  => array(
+          'post_status'    => 'publish',
+          'posts_per_page' => - 1,
+        ),
+      ),
       array(
         'name'        => __( 'Texto descriptivo', 'loslenos' ),
         'id'          => 'featured_text',
