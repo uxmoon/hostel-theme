@@ -7,4 +7,7 @@ jQuery(document).ready(function($) {
     pause: 6000,
     speed: 750
   });
+  $('.bxfotos').bxSlider({
+    pager: false
+  });
 });

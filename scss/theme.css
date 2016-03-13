@@ -256,6 +256,10 @@ a.button,
 
 .home-featured-services {
 
+  a {
+    text-decoration: none;
+  }
+
   .item {
     border: 10px solid #c2414a;
     border-radius: 50%;
@@ -540,4 +544,27 @@ a.button,
       background-color: $color-purple;
     }
   }
+}
+
+/* Fotos */
+
+.hosteria-galeria {
+  border-top: 5px solid $color-purple;
+  background-color: $color-yellow-dark;
+  text-align: center;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1;
+    font-family: $font-southern;
+    font-size: 60px;
+    font-weight: normal;
+  }
+
+  .bx-wrapper img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
