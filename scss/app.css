@@ -37,6 +37,7 @@ html {
 }
 
 .one-third,
+.two-thirds,
 .form-field,
 .half,
 .column {
@@ -140,10 +141,21 @@ strong {
     }
   }
 
-  @media (max-width: 1270px){
+  @media (min-width: 790px) and (max-width: 999px){
+
+    li {
+      display: inline-block;
+      width: 50%;
+    }
+
+  }
+
+  @media (min-width: 1000px) and (max-width: 1270px){
+
     li {
       line-height: 2.5;
     }
+
   }
 
 }
@@ -406,6 +418,14 @@ span.wpcf7-not-valid-tip {
   }
 }
 
+@media (max-width: 769px) {
+
+  .page-location .sidebar {
+    display: none;
+  }
+
+}
+
 /* page: services*/
 
 .hosteria-services-list {
@@ -492,21 +512,30 @@ span.wpcf7-not-valid-tip {
     margin: 0;
     padding-left: 0;
   }
-  a {
-    padding: 15px 8px;
+
+  @media (min-width: 770px) {
+    a {
+      padding: 15px 8px;
+    }
   }
+
 }
 
 /* page: home */
 
-.slider-home,
-.bx-wrapper {
-  min-height: 410px;
-}
-.slider-home > div {
-  min-height: 410px;
-  background-position: top center;
-  background-size: cover;
+.page-home {
+
+  .slider-home,
+  .bx-wrapper {
+    min-height: 410px;
+  }
+
+  .slider-home > div {
+    min-height: 410px;
+    background-position: top center;
+    background-size: cover;
+  }
+
 }
 
 .page-home {
@@ -586,3 +615,4 @@ span.wpcf7-not-valid-tip {
 /* slider */
 
 @import 'jquery.bxslider.css'
+

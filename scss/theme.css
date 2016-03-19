@@ -1,6 +1,7 @@
 $color-white         : #FFFFFF;
 $color-red           : #611D25;
 $color-red-border    : #D96F77;
+$color-red-text      : #C2414A;
 $color-yellow        : #FFF5D8;
 $color-yellow-border : #ECDEC7;
 $color-yellow-text   : #FFF4D3;
@@ -8,7 +9,6 @@ $color-yellow-dark   : #FFEEBC;
 $color-purple        : #872750;
 $color-purple-text   : #421233;
 $color-grey-border   : #ECE6E8;
-$color-red-text      : #C2414A;
 $color-blue          : #3B5998;
 
 body {
@@ -437,6 +437,15 @@ a.button,
   }
 }
 
+.hosteria-restrictions ul {
+  margin: 0;
+  list-style-image: url('../images/icon-bullet.png');
+
+  li {
+    margin-bottom: 8px;
+  }
+}
+
 .decoration {
   background-image: url('../images/ui-decoration.png');
   background-repeat: no-repeat;
@@ -514,6 +523,9 @@ a.button,
 /* page: services */
 
 .hosteria-services-list {
+  ul {
+    list-style-image: url('../images/icon-bullet.png');
+  }
 }
 
 .hosteria-services-tourism {
@@ -609,22 +621,60 @@ a.button,
 /* page: tourism */
 
 .hosteria-tourism-nav {
-  background-color: $color-red-text;
-  li {
-    border-bottom: 1px solid $color-red-border;
-    list-style-type: none;
+
+  @media (max-width: 769px) {
+
+    li {
+      display: inline-block;
+
+      &:after {
+        content: '/';
+        display: inline-block;
+        margin-left: 5px;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: $color-red-text;
+      }
+    }
+
+    li.current-menu-item {
+      a {
+        text-decoration: none;
+        font-family: $font-quattro-bold;
+        color: $color-purple-text;
+      }
+    }
+
   }
 
-  a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $color-yellow;
-    display: block;
+  @media (min-width: 770px) {
 
-    &:hover,
-    &:active {
-      background-color: $color-purple;
+    background-color: $color-red-text;
+
+    li {
+      display: block;
+      border-bottom: 1px solid $color-red-border;
+      list-style-type: none;
     }
+
+    a {
+      display: block;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $color-yellow;
+
+      &:hover,
+      &:active {
+        background-color: $color-purple;
+      }
+    }
+
   }
 }
 
