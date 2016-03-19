@@ -16,7 +16,8 @@ get_header(); ?>
         <div class="slider-home bxslider">
           <?php $images = rwmb_meta( 'image_advanced', 'type=image&size=full_url' );
           foreach ( $images as $image ) {
-            echo "<div><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='Hosteria Los Leños'></div>";
+            // echo "<div><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='Hosteria Los Leños'></div>\n";
+            echo "<div style='background-image:url({$image['url']});'></div>";
           } ?>
         </div>
 
