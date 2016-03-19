@@ -48,6 +48,14 @@ html {
   margin-bottom: 15px;
 }
 
+@media (min-width: 540px) {
+  .hosteria-tourism-history {
+    .half {
+      lost-column: 1/2;
+    }
+  }
+}
+
 /* 769 pixels */
 @media (min-width: 48.063em) {
   .half {
@@ -487,14 +495,6 @@ span.wpcf7-not-valid-tip {
     }
   }
 }
-
-/*.hosteria-services-pillars {
-  ol {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-*/
 
 .hosteria-tourism-history {
   img {

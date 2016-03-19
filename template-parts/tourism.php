@@ -4,7 +4,7 @@ Template Name: Tourism
 */
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area page-tourism">
   <main id="main" class="site-main row" role="main">
 
     <?php while ( have_posts() ) : the_post(); ?>
