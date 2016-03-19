@@ -10,12 +10,12 @@ var gulp         = require('gulp'),
     lost         = require('lost'),
     pxtorem      = require('postcss-pxtorem');
 
-var paths = {
-  cssSource: 'scss/',
-  cssDestination: 'css/'
-};
+// var paths = {
+//   cssSource: 'scss/',
+//   cssDestination: 'css/'
+// };
 
-gulp.task('styles', function() {
+gulp.task('css', function() {
     var processors = [
         autoprefixer,
         cssnext,
@@ -27,14 +27,22 @@ gulp.task('styles', function() {
             prop_white_list: ['font-size', 'line-height', 'letter-spacing']
         }),
     ];
-  return gulp.src(paths.cssSource + '*app.css')
+  // return gulp.src(paths.cssSource + '*app.css')
+  return gulp.src('./scss/app.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
     .pipe(cssnano())
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(paths.cssDestination));
+    // .pipe(gulp.dest(paths.cssDestination));
+    .pipe(gulp.dest('./css'));
 });
 
-gulp.watch(paths.cssSource + 'app.css', ['styles']);
+// Watch
+gulp.task('watch', function() {
+    // Watch .css files
+  gulp.watch('scss/**/*.css', ['css']);
+});
 
-gulp.task('default', ['styles']);
+// gulp.watch(paths.cssSource + 'app.css', ['styles']);
+
+gulp.task('default', ['css', 'watch']);

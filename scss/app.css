@@ -139,6 +139,13 @@ strong {
       }
     }
   }
+
+  @media (max-width: 1270px){
+    li {
+      line-height: 2.5;
+    }
+  }
+
 }
 
 .site-menu-footer {
@@ -461,13 +468,13 @@ span.wpcf7-not-valid-tip {
   }
 }
 
-.hosteria-services-pillars {
+/*.hosteria-services-pillars {
   ol {
     margin-top: 0;
     margin-bottom: 0;
   }
 }
-
+*/
 
 .hosteria-tourism-history {
   img {
@@ -525,6 +532,7 @@ span.wpcf7-not-valid-tip {
   }
 
   h2 {
+    margin-top: 30px;
     width: 100%;
   }
 

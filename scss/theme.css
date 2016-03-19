@@ -265,7 +265,7 @@ a.button,
   }
 
   .item {
-    border: 10px solid #c2414a;
+    border: 6px solid #c2414a;
     border-radius: 50%;
   }
 
@@ -525,6 +525,84 @@ a.button,
     margin-top: 0;
     text-transform: uppercase;
     text-align: center;
+  }
+}
+
+.hosteria-services-pillars {
+  ol {
+    margin: 0;
+    padding-left: 0;
+
+    li {
+      padding-left: 40px;
+      margin-bottom: 20px;
+      list-style: none;
+      position: relative;
+
+      @media (min-width: 770px) {
+        min-height: 60px;
+      }
+
+      &:before {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        display: inline-block;
+        color: $color-purple;
+
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        border: 2px solid $color-purple;
+
+        text-align: center;
+        line-height: 30px;
+        font-family: $font-quattro-bold;
+        font-size: 18px;
+      }
+
+      &:first-child:before {
+        content: '1';
+      }
+
+      &:nth-child(2):before {
+        content: '2';
+      }
+
+      &:nth-child(3):before {
+        content: '3';
+      }
+
+      &:nth-child(4):before {
+        content: '4';
+      }
+
+      &:nth-child(5):before {
+        content: '5';
+      }
+    }
+  }
+
+  .half.last ol li {
+    &:first-child:before {
+      content: '6';
+    }
+
+    &:nth-child(2):before {
+      content: '7';
+    }
+
+    &:nth-child(3):before {
+      content: '8';
+    }
+
+    &:nth-child(4):before {
+      content: '9';
+    }
+
+    &:nth-child(5):before {
+      content: '10';
+    }
   }
 }
 

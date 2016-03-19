@@ -50,7 +50,7 @@ get_header(); ?>
                         <div class="half">
                             <?php echo rwmb_meta( 'services_pilars_text' ); ?>
                         </div>
-                        <div class="half">
+                        <div class="half last">
                             <?php echo rwmb_meta( 'services_pilars_text_2' ); ?>
                         </div>
                     </div>
