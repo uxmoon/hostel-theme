@@ -665,6 +665,10 @@ a.button,
       display: block;
       border-bottom: 1px solid $color-red-border;
       list-style-type: none;
+
+      &.current-menu-item a {
+        background-color: $color-purple;
+      }
     }
 
     a {
@@ -684,9 +688,11 @@ a.button,
 }
 
 .hosteria-tourism-history {
+
   .row {
     margin-bottom: 30px;
   }
+
   img {
     display: block;
     margin-left: auto;
@@ -699,6 +705,10 @@ a.button,
     @media (min-width: 500px) {
       max-width: 100%;
     }
+  }
+
+  a {
+    color: $color-red-text;
   }
 }
 

@@ -114,6 +114,7 @@ strong {
     padding-top: 0;
   }
 
+  &.page-tourism,
   &.page-bottom {
     padding-bottom: 0;
   }
@@ -479,6 +480,7 @@ span.wpcf7-not-valid-tip {
         left: 0;
       }
     }
+
   }
 }
 
@@ -496,15 +498,6 @@ span.wpcf7-not-valid-tip {
   }
 }
 
-.hosteria-tourism-history {
-  img {
-    float: left;
-  }
-  p {
-    clear: both;
-  }
-}
-
 /* page: tourism */
 
 .hosteria-tourism-nav {
@@ -518,7 +511,10 @@ span.wpcf7-not-valid-tip {
       padding: 15px 8px;
     }
   }
+}
 
+.hosteria-tourism-history {
+  padding-bottom: 30px;
 }
 
 /* page: home */
