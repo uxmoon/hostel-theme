@@ -10,7 +10,7 @@ div.wp-forecast-curr {
 }
 /* style for forecast data */
 div.wp-forecast-curr-head {
-    font-size: 24px;
+    font-size: 22px;
     text-transform: uppercase;
     font-family: $font-quattro-bold;
 }

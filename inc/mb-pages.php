@@ -323,24 +323,20 @@ function loslenos_register_meta_boxes( $meta_boxes )
 
     'include' => array(
       'relation' => 'OR',
-      'slug'     => 'ubicacion',
-      'template' => 'location.php',
-      ),
+      'ID'       => 10
+    ),
 
     'fields'     => array(
       array(
         'id'   => 'location_address',
         'name' => __( 'Dirección', 'loslenos' ),
         'type' => 'text',
-// 'std'  => __( 'Hanoi, Vietnam', 'loslenos' ),
-        ),
+      ),
       array(
         'id'            => 'location_map',
         'name'          => __( 'Ubicación en el mapa', 'loslenos' ),
         'type'          => 'map',
-// Default location: 'latitude,longitude[,zoom]' (zoom is optional)
         'std'           => '-32.675655,-64.993824[,15]',
-// Name of text field where address is entered. Can be list of text fields, separated by commas (for ex. city, state)
         'address_field' => 'location_address',
         ),
       array(
@@ -354,11 +350,10 @@ function loslenos_register_meta_boxes( $meta_boxes )
           'media_buttons' => false,
           ),
         ),
-// DIVIDER
       array(
         'type' => 'divider',
-'id'   => 'fake_divider_id', // Not used, but needed
-),
+        'id'   => 'fake_divider_id',
+      ),
       array(
         'name'             => __( 'Foto', 'loslenos' ),
         'id'               => 'location_drive_directions_media',
@@ -377,6 +372,32 @@ function loslenos_register_meta_boxes( $meta_boxes )
           'media_buttons' => false,
           ),
         ),
+      )
+    );
+
+// Location Tourism - meta box
+  $meta_boxes[] = array(
+    'title'      => 'Ubicación',
+    'post_types' => 'page',
+
+    'include' => array(
+      'relation' => 'OR',
+      'ID'       => 30
+    ),
+
+    'fields' => array(
+      array(
+        'id'   => 'location_address',
+        'name' => __( 'Dirección', 'loslenos' ),
+        'type' => 'text',
+      ),
+      array(
+        'id'            => 'location_map_tourism',
+        'name'          => __( 'Ubicación en el mapa', 'loslenos' ),
+        'type'          => 'map',
+        'std'           => '-32.675655,-64.993824[,15]',
+        'address_field' => 'location_address',
+        )
       )
     );
 
