@@ -1,0 +1,17 @@
+/* TEAM */
+  Web Developer: Martin Luna
+  Contact: hello [at] uxmoon.com
+  Twitter: @ux_moon
+  From: Buenos Aires, Argentina
+
+  UI developer: Soledad Moreno
+  Contact: info [at] blackeye.com.ar
+  Twitter: @sole_blackeye
+  From: San Luis, Argentina
+
+/* SITE */
+  Last update: 2016/03/27
+  Language: Spanish
+  Standards: HTML5, CSS3, Responsive Web Design, WordPress
+  Components: Modernizr, jQuery, bxSlider, underscores starter theme
+  Software: Sublime Text, FileZilla, Photoshop, Gulp, postCSS
