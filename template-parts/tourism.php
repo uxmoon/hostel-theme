@@ -11,8 +11,7 @@ get_header(); ?>
 
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="entry-content">
-          <div class="row">
-            <div class="hosteria-tourism-nav one-third">
+            <div class="hosteria-tourism-nav entry-sidebar">
               <?php wp_nav_menu(
                 array(
                   'theme_location' => 'sidebar',
@@ -22,7 +21,7 @@ get_header(); ?>
                 );
                 ?>
               </div>
-              <div class="two-thirds hosteria-tourism-history">
+              <div class="hosteria-tourism-history entry-column">
                 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                 <?php the_content(); ?>
               </div>

@@ -500,6 +500,27 @@ span.wpcf7-not-valid-tip {
 
 /* page: tourism */
 
+
+/* page: tourism */
+
+.page-tourism {
+  @media (min-width: 770px) {
+    .entry-content {
+      position: relative;
+    }
+    .entry-sidebar {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 240px;
+    }
+    .entry-column {
+      margin-left: 260px;
+      min-height: 350px;
+    }
+  }
+}
+
 .hosteria-tourism-nav {
   ul {
     margin: 0;
