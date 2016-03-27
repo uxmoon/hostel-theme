@@ -25,18 +25,20 @@ get_header(); ?>
 
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-            <div class="hosteria-galeria">
+              <div class="hosteria-galeria">
                 <?php the_title('<h2>','</h2>'); ?>
 
                 <div class="bxfotos">
                   <?php
-                  $images = rwmb_meta( 'loslenos_imgadv', 'type=image&size=fotos-thumbnail' );
-                  foreach ( $images as $image ) {
-                    echo "<div><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' /></div>\n";
-                  } ?>
+                  $images = rwmb_meta( 'photo_gallery', 'type=image&size=full' );
+                  foreach ( $images as $image )
+                  {
+                    echo "<div><img src='{$image['url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' /></div>";
+                  }
+                  ?>
                 </div>
-            </div>
-              <?php endwhile; ?>
+              </div>
+            <?php endwhile; ?>
 
             <?php wp_reset_postdata(); ?>
 

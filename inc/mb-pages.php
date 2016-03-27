@@ -29,7 +29,7 @@ function loslenos_register_meta_boxes( $meta_boxes )
       )
     );
 
-// Homepage - 2nd meta box
+  // Homepage - 2nd meta box
   $meta_boxes[] = array(
     'title'      => 'Secciones principales',
     'post_types' => 'page',
@@ -58,12 +58,9 @@ function loslenos_register_meta_boxes( $meta_boxes )
         'name'        => __( 'Vínculo', 'loslenos' ),
         'id'          => "first_featured_page",
         'type'        => 'post',
-        // Post type
         'post_type'   => 'page',
-        // Field type, either 'select' or 'select_advanced' (default)
         'field_type'  => 'select',
         'placeholder' => __( 'Seleccionar página', 'loslenos' ),
-        // Query arguments (optional). No settings means get all published posts
         'query_args'  => array(
           'post_status'    => 'publish',
           'posts_per_page' => - 1,
@@ -86,12 +83,9 @@ function loslenos_register_meta_boxes( $meta_boxes )
         'name'        => __( 'Vínculo', 'loslenos' ),
         'id'          => "second_featured_page",
         'type'        => 'post',
-        // Post type
         'post_type'   => 'page',
-        // Field type, either 'select' or 'select_advanced' (default)
         'field_type'  => 'select',
         'placeholder' => __( 'Seleccionar página', 'loslenos' ),
-        // Query arguments (optional). No settings means get all published posts
         'query_args'  => array(
           'post_status'    => 'publish',
           'posts_per_page' => - 1,
@@ -114,12 +108,9 @@ function loslenos_register_meta_boxes( $meta_boxes )
         'name'        => __( 'Vínculo', 'loslenos' ),
         'id'          => "third_featured_page",
         'type'        => 'post',
-        // Post type
         'post_type'   => 'page',
-        // Field type, either 'select' or 'select_advanced' (default)
         'field_type'  => 'select',
         'placeholder' => __( 'Seleccionar página', 'loslenos' ),
-        // Query arguments (optional). No settings means get all published posts
         'query_args'  => array(
           'post_status'    => 'publish',
           'posts_per_page' => - 1,
@@ -146,7 +137,7 @@ function loslenos_register_meta_boxes( $meta_boxes )
       )
     );
 
-// Homepage - 3rd meta box
+  // Homepage - 3rd meta box
   $meta_boxes[] = array(
     'title'      => 'Elija hacer turismo tranquilo',
     'post_types' => 'page',
@@ -172,7 +163,7 @@ function loslenos_register_meta_boxes( $meta_boxes )
       )
     );
 
-// Rates - meta box
+  // Rates - meta box
   $meta_boxes[] = array(
     'title'      => 'Tarifas',
     'post_types' => 'page',
@@ -202,11 +193,10 @@ function loslenos_register_meta_boxes( $meta_boxes )
         'type'        => 'text',
         'size'        => 20
         ),
-// DIVIDER
       array(
         'type' => 'divider',
-'id'   => 'fake_divider_id', // Not used, but needed
-),
+        'id'   => 'fake_divider_id', // Not used, but needed
+      ),
       array(
         'name'        => __( 'Horario Check-in', 'loslenos' ),
         'id'          => 'rates_checkin_hour',
@@ -240,7 +230,7 @@ function loslenos_register_meta_boxes( $meta_boxes )
       )
     );
 
-// Services - meta box
+  // Services - meta box
   $meta_boxes[] = array(
     'title'      => 'Servicios',
     'post_types' => 'page',
@@ -263,11 +253,10 @@ function loslenos_register_meta_boxes( $meta_boxes )
           'media_buttons' => false,
           ),
         ),
-// DIVIDER
       array(
         'type' => 'divider',
-'id'   => 'fake_divider_id', // Not used, but needed
-),
+        'id'   => 'fake_divider_id', // Not used, but needed
+      ),
       array(
         'name'             => __( 'Foto', 'loslenos' ),
         'id'               => 'services_tourism_media',
@@ -286,11 +275,10 @@ function loslenos_register_meta_boxes( $meta_boxes )
           'media_buttons' => false,
           ),
         ),
-// DIVIDER
       array(
         'type' => 'divider',
-'id'   => 'fake_divider_id', // Not used, but needed
-),
+        'id'   => 'fake_divider_id', // Not used, but needed
+      ),
       array(
         'name'    => __( 'Texto 10 pilares. 1 a 5.', 'loslenos' ),
         'id'      => 'services_pilars_text',
@@ -316,7 +304,7 @@ function loslenos_register_meta_boxes( $meta_boxes )
       )
     );
 
-// Location - meta box
+  // Location - meta box
   $meta_boxes[] = array(
     'title'      => 'Ubicación',
     'post_types' => 'page',
@@ -375,7 +363,7 @@ function loslenos_register_meta_boxes( $meta_boxes )
       )
     );
 
-// Location Tourism - meta box
+  // Location Tourism - meta box
   $meta_boxes[] = array(
     'title'      => 'Ubicación',
     'post_types' => 'page',
@@ -401,17 +389,17 @@ function loslenos_register_meta_boxes( $meta_boxes )
       )
     );
 
-// Photos meta box
+  // Photos meta box
   $meta_boxes[] = array(
     'title'      => 'Fotos',
     'post_types' => 'fotos',
 
     'fields' => array(
       array(
-        'name'             => __( 'Cargar fotos', 'rwmb' ),
-        'id'               => "{$prefix}imgadv",
+        'id'               => 'photo_gallery',
+        'name'             => __( 'Cargar fotos', 'loslenos' ),
         'type'             => 'image_advanced',
-        'max_file_uploads' => 60,
+        'max_file_uploads' => 20
         )
       )
     );

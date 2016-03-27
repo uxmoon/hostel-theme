@@ -33,7 +33,7 @@
                     $field_fb_url   = 'general_fb_url';
                     $field_fb_label = 'general_fb_label';
                     if ( isset( $settings[$field_fb_url] ) ) {
-                        echo '<p>Síganos en <a href="' . $settings[$field_fb_url] . ' rel="external">'. $settings[$field_fb_label] . '</a>';
+                        echo '<p>Síganos en <a href="' . $settings[$field_fb_url] . '" rel="external">'. $settings[$field_fb_label] . '</a>';
                     }
                 ?></p>
             </div>
